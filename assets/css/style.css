@@ -1,5 +1,11 @@
+/*----------------------------- Imports Google Font Families - Nanum Pen Script, Karla(200-800) & Rubik Mono One*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Nanum+Pen+Script&family=Rubik+Mono+One&display=swap');
+
+/* font-family: 'Karla', sans-serif;
+font-family: 'Nanum Pen Script', cursive;
+font-family: 'Rubik Mono One', sans-serif; */
+
 /*----------------------------- Removes default margins to remove unwanted space*/
-/* .navbar-nav, */
 h1,
 p {
     margin: 0;
@@ -8,17 +14,17 @@ p {
 
 /*----------------------------- Text Styling*/
 h1 {
-    color: greenyellow;
-    background-color: cornflowerblue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 900;
+    color: black;
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
 p {
     color: antiquewhite;
     background-color: black;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 200;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
 }
 
 /*----------------------------- Navbar Styling*/
@@ -28,12 +34,12 @@ p {
     background-color: rgba(1, 1, 1, .25)
 }
 
-/*--- Center align text and add a backgroud color to the menu*/
+/*--- Style Navbar Links */
 .navbar-container a {
     color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 /*--- Provide space between the navbar icon and brand text*/
@@ -41,7 +47,15 @@ p {
     margin-right: 15px;
 }
 
-/*----------------------------- Navbar Sas code found using Chrome Dev Tools, used to style navbar further and get around inbuilt styling*/
+/*--- Adds a dropshadow to the navbar. Parameters: horizontal, vertical, blur, spread, colour, Z-index used to ensure it's shown above the below sections.*/
+.navbar {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 60px;
+}
+
+/*----------------------------- Navbar Sass code found using Chrome Dev Tools, used to style navbar further and get around inbuilt styling*/
 /*--- These lines allow me control over the active links color as it was seperate from the other links*/
 .navbar-nav .nav-link.active,
 .navbar-nav .show>.nav-link {
@@ -54,15 +68,15 @@ p {
     --bs-navbar-brand-font-size: 24px;
     --bs-navbar-brand-color: black;
     --bs-navbar-brand-hover-color: yellow;
-    font-weight: var(--bs-body-font-weight);
-    --bs-body-font-weight: 900;
     font-family: var(--bs-body-font-family);
-    --bs-body-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --bs-body-font-family: 'Rubik Mono One', sans-serif;
+    font-weight: var(--bs-body-font-weight);
+    --bs-body-font-weight: 400;
 }
 
-/*--- Hover used to improve user experience by creating interactivity with the clickable links*/
+/*--- Hover class used to improve user experience by creating interactivity with the clickable links*/
 .navbar-container a:hover {
     color: yellow;
-    border: 2px solid yellow;
-    padding: 8px;
+    border: 3px solid yellow;
+    padding: 5px;
 }
