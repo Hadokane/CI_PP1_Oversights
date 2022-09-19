@@ -134,18 +134,59 @@ Info goes here.
 Let's hope very few!
 
 1. Using the condensed Padding CSS was not effecting the navbar at all.
-    .navbar_links {
-        list-style: none;
-        padding: 15px, 0px, 0px, 15px;
-    }
 
-    Solution was to break it up:
-    .navbar_links {
-        list-style: none;
-        padding-top: 5px;
-        padding-left: 15px;
-    }
----
+        .navbar_links {
+            list-style: none;
+            padding: 15px, 0px, 0px, 15px;
+        }
+
+    The solution was to simply break it up into specific padding commands:
+
+        .navbar_links {
+            list-style: none;
+            padding-top: 5px;
+            padding-left: 15px;
+        }
+    ---
+
+2. Youtube & Bandcamp's Embeds were unresponsive Iframes by default and needed to be styled in order to adapt to the responsive layout of the website.
+
+    This initial code specified a width and height for the video. 
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DJQ0X-z65oQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    I'd believed that by setting the following, my issues would be solved and the design would become responsive.
+
+            width="100%" height="auto"
+
+    I was incorrect however and although the width now filled the container the videos height became a squashed strip that wouldn't change. The solution was to removed the width & height from the iframe and style it externally in the style.css sheet.
+    
+    I found guidance from this W3CSchools article. (https://www.w3schools.com/howto/howto_css_responsive_iframes.asp)
+
+    Which taught me that to maintain the 16:9 Aspect Ratio. I needed to set the container to relative and us either top or bottom padding to keep the iframe aligned with my responsive Bootstrap code. 
+    
+    The 56.25 came from using the needed 16:9 ratio (9/16=0.5625).
+
+        .yt-container {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .yt-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+    I was then able to adapt this code and alter it for use with the Bandcamp embed, allowing that to also become responsive.
+   
+    This time to achieve a 9:16 Aspect Ratio instead I used the default height & width values (350/621=1.7778) to determine that "177.78" would be the perfect size for padding.
+    
+    I adjusted this further to remove some unneccesary blank space from the widget.
 
 ## Future Enhancements
 
