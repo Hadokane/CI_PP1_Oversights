@@ -36,6 +36,11 @@ p {
     font-size: 24px;
 }
 
+/*--- Provide space between the navbar icon and brand text*/
+.navbar-brand .icon {
+    margin-right: 15px;
+}
+
 /*----------------------------- Navbar Sas code found using Chrome Dev Tools, used to style navbar further and get around inbuilt styling*/
 /*--- These lines allow me control over the active links color as it was seperate from the other links*/
 .navbar-nav .nav-link.active,
