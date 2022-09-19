@@ -21,3 +21,27 @@ p {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 200;
 }
+
+/*----------------------------- Navbar Styling*/
+
+.navbar_links {
+    /*----------------------------- Removes default icon on navbar*/
+    list-style: none;
+    display: inline-block;
+    float: right;
+}
+
+.navbar_links a {
+    /*----------------------------- Removes underline on links*/
+    text-decoration: none;
+    color: greenyellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+
+}
+
+/*----------------------------- Hover used to improve user experience by drawing attention to the clickable link*/
+.navbar_links a:hover {
+    color: yellow;
+    border: 2px solid yellow;
+}
