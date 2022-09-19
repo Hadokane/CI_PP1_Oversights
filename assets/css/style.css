@@ -7,13 +7,15 @@ font-family: 'Rubik Mono One', sans-serif; */
 
 /*----------------------------- Removes default margins to remove unwanted space*/
 h1,
+h2,
 p {
     margin: 0;
     padding: 0;
 }
 
 /*----------------------------- Text Styling*/
-h1 {
+h1,
+h2 {
     color: black;
     font-family: 'Karla', sans-serif;
     font-weight: 800;
@@ -79,4 +81,38 @@ p {
     color: yellow;
     border: 3px solid yellow;
     padding: 5px;
+}
+
+/*--- Makes the Youtube emebed responsive, code from W3CSchools (https://www.w3schools.com/howto/howto_css_responsive_iframes.asp)*/
+.yt-container {
+    overflow: hidden;
+    /* 16:9 Aspect Ratio maintained. Counteracted by adding top/bottom padding to keep in aligned based(divide 9 by 16 = 0.5625) */
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.yt-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/*--- Adapted the Youtube responsive code for use with bandcamp)*/
+.bc-container {
+    overflow: hidden;
+    /* 9:16 Aspect Ratio instead (divide 350 by 621 = 1.7778) so 177.78 for perfect sizing but the embed was oversized originally*/
+    padding-top: 160%;
+    position: relative;
+    height: 0;
+}
+
+.bc-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
