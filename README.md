@@ -78,6 +78,19 @@ Info goes here. Mention burger menu on right-hand side being beneficial as most 
 
 **Wireframes**
 
+Initial wireframe design for the websites home page layout. Includes both mobile & computer.
+
+Shows collapsable nav bar conforming to responsive design best practices.
+
+Features include:
+- displaying an external link to the EP or an embedded player from spotify.
+- embedding the latest Youtube music video.
+- Promoting merchandise to drive sales.
+- Including social links in two different accessible places. Changing based on the responsive layout so that they're always convenient for the user to find.
+
+![Index Wireframe](docs/wireframes/wireframe_index.png)
+
+
 Info goes here.
 
 **Font / Typography**
