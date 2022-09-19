@@ -1,0 +1,23 @@
+/*----------------------------- Test CSS for Initial commit*/
+
+/*----------------------------- Removing default margins to remove unwanted space*/
+h1,
+p {
+    margin: 0;
+}
+
+/*----------------------------- Text Styling*/
+
+h1 {
+    color: greenyellow;
+    background-color: cornflowerblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+}
+
+p {
+    color: antiquewhite;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+}
