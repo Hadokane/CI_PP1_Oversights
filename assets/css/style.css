@@ -1,6 +1,5 @@
-/*----------------------------- Test CSS for Initial commit*/
-
-/*----------------------------- Removing default margins to remove unwanted space*/
+/*----------------------------- Removes default margins to remove unwanted space*/
+/* .navbar-nav, */
 h1,
 p {
     margin: 0;
@@ -8,7 +7,6 @@ p {
 }
 
 /*----------------------------- Text Styling*/
-
 h1 {
     color: greenyellow;
     background-color: cornflowerblue;
@@ -24,27 +22,42 @@ p {
 }
 
 /*----------------------------- Navbar Styling*/
-
-/*----------------------------- Removes default icon on navbar and provides padding*/
-.navbar_links {
-    list-style: none;
-    padding-top: 5px;
-    padding-left: 15px;
+/*--- Center align text and add a backgroud color to the menu*/
+.navbar-container {
+    text-align: center;
+    background-color: rgba(1, 1, 1, .25)
 }
 
-/*----------------------------- Removes underline on links, provides spacing & styling*/
-.navbar_links a {
-    text-decoration: none;
-    color: greenyellow;
+/*--- Center align text and add a backgroud color to the menu*/
+.navbar-container a {
+    color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 400;
     font-size: 24px;
-    padding-right: 10px;
 }
 
-/*----------------------------- Hover used to improve user experience by drawing attention to the clickable link*/
-.navbar_links a:hover {
+/*----------------------------- Navbar Sas code found using Chrome Dev Tools, used to style navbar further and get around inbuilt styling*/
+/*--- These lines allow me control over the active links color as it was seperate from the other links*/
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: var(--bs-navbar-active-color);
+    --bs-navbar-active-color: black;
+}
+
+/*--- Navbar brand-image font weight, colour & family modifier, to ensure I have control over these aspects*/
+.navbar-brand {
+    --bs-navbar-brand-font-size: 24px;
+    --bs-navbar-brand-color: black;
+    --bs-navbar-brand-hover-color: yellow;
+    font-weight: var(--bs-body-font-weight);
+    --bs-body-font-weight: 900;
+    font-family: var(--bs-body-font-family);
+    --bs-body-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*--- Hover used to improve user experience by creating interactivity with the clickable links*/
+.navbar-container a:hover {
     color: yellow;
     border: 2px solid yellow;
-    padding: 5px;
+    padding: 8px;
 }
