@@ -4,6 +4,7 @@
 h1,
 p {
     margin: 0;
+    padding: 0;
 }
 
 /*----------------------------- Text Styling*/
@@ -24,24 +25,26 @@ p {
 
 /*----------------------------- Navbar Styling*/
 
+/*----------------------------- Removes default icon on navbar and provides padding*/
 .navbar_links {
-    /*----------------------------- Removes default icon on navbar*/
     list-style: none;
-    display: inline-block;
-    float: right;
+    padding-top: 5px;
+    padding-left: 15px;
 }
 
+/*----------------------------- Removes underline on links, provides spacing & styling*/
 .navbar_links a {
-    /*----------------------------- Removes underline on links*/
     text-decoration: none;
     color: greenyellow;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 300;
-
+    font-weight: 400;
+    font-size: 24px;
+    padding-right: 10px;
 }
 
 /*----------------------------- Hover used to improve user experience by drawing attention to the clickable link*/
 .navbar_links a:hover {
     color: yellow;
     border: 2px solid yellow;
+    padding: 5px;
 }

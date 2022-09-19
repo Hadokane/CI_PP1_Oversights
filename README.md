@@ -120,6 +120,18 @@ Info goes here.
 
 Let's hope very few!
 
+1. Using the condensed Padding CSS was not effecting the navbar at all.
+    .navbar_links {
+        list-style: none;
+        padding: 15px, 0px, 0px, 15px;
+    }
+
+    Solution was to break it up:
+    .navbar_links {
+        list-style: none;
+        padding-top: 5px;
+        padding-left: 15px;
+    }
 ---
 
 ## Future Enhancements
