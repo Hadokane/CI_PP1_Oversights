@@ -15,10 +15,16 @@ p {
 
 /*----------------------------- Text Styling*/
 h1,
-h2 {
+h2,
+.card h5 {
     color: black;
     font-family: 'Karla', sans-serif;
     font-weight: 800;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -27,6 +33,38 @@ p {
     background-color: black;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/*----------------------------- card Styling*/
+
+.card h5 {
+    text-align: center;
+}
+
+.card a {
+    text-decoration: none; 
+}
+
+.card h5:hover {
+    color: yellow;
+    border: 3px solid yellow;
+    padding: 5px;
+    background-color: black;
+}
+
+/*----------------------------- hr Styling*/
+
+hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    /* Set the hr color */
+    color: rgba(1, 1, 1, .25);
+    /* old IE */
+    background-color: rgba(1, 1, 1, .75)
+        /* Modern Browsers */
 }
 
 /*----------------------------- Navbar Styling*/
@@ -49,7 +87,7 @@ p {
     margin-right: 15px;
 }
 
-/*--- Adds a dropshadow to the navbar. Parameters: horizontal, vertical, blur, spread, colour, Z-index used to ensure it's shown above the below sections.*/
+/*--- Adds a dropshadow to the navbar. [Parameters: horizontal, vertical, blur, spread, colour] Z-index used to ensure it's shown on top of other sections.*/
 .navbar {
     position: relative;
     z-index: 1;
@@ -81,12 +119,20 @@ p {
     color: yellow;
     border: 3px solid yellow;
     padding: 5px;
+    background-color: black;
 }
+
+/*--- remove background on active link hover to inform the user they are already on this page. Improves overall experience and provides variety.*/
+.navbar-container .active:hover {
+    border: 0;
+    background-color: transparent;
+}
+/*----------------------------- Modifying and overriding 3rd party embed codes to style them with*/
 
 /*--- Makes the Youtube emebed responsive, code from W3CSchools (https://www.w3schools.com/howto/howto_css_responsive_iframes.asp)*/
 .yt-container {
     overflow: hidden;
-    /* 16:9 Aspect Ratio maintained. Counteracted by adding top/bottom padding to keep in aligned based(divide 9 by 16 = 0.5625) */
+    /* 16:9 Aspect Ratio maintained. Counteracted by adding top/bottom padding to keep in aligned based(divide 9/16=0.5625) */
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
@@ -100,7 +146,24 @@ p {
     position: absolute;
 }
 
-/*--- Adapted the Youtube responsive code for use with bandcamp)*/
+/*--- Adapting the above code to work with a 1:1 aspect ratio "square" video ---*/
+.yt-container-square {
+    overflow: hidden;
+    /* 1:1 Aspect Ratio maintained. Counteracted by adding top/bottom padding to keep in aligned based(divide 1 by 1 =1) */
+    padding-bottom: 100%;
+    position: relative;
+    height: 0;
+}
+
+.yt-container-square iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/*--- Adapted the Youtube responsive code for use with Bandcamp*/
 .bc-container {
     overflow: hidden;
     /* 9:16 Aspect Ratio instead (divide 350 by 621 = 1.7778) so 177.78 for perfect sizing but the embed was oversized originally*/
@@ -117,7 +180,7 @@ p {
     position: absolute;
 }
 
-/*--- Card styles (found using Chrome Dev Tools)*/
+/*--- Card style "Sass" overrides (found using Chrome Dev Tools)*/
 
 .card {
     --bs-card-border-width: 1px;

@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <!-- Header & Logo/Hero Image -->
+    <!-- Header & Navbar -->
     <header>
         <!-- Navigation menu with Bootstrap styling -->
         <nav class="navbar navbar-expand-lg">
@@ -75,29 +75,55 @@
                             seamless><a href="https://theoversights.bandcamp.com/album/hello-adventure">Hello Adventure
                                 by The Oversights</a></iframe>
                     </div>
+                    <hr>
                     <!-- Spotify Embed iframe (already responsive)-->
                     <p>Add us to your <strong>"Summer Vibes Playlist"</strong> on Spotify</p>
-                    <iframe style="border: radius 0;"
-                        src="https://open.spotify.com/embed/artist/6boblV4KdwvbrysRgQHQW9?utm_source=generator"
-                        width="100%" height="260" frameBorder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"></iframe>
+                    <div class="spotify-container">
+                        <iframe style="border: radius 0;"
+                            src="https://open.spotify.com/embed/artist/6boblV4KdwvbrysRgQHQW9?utm_source=generator"
+                            width="100%" height="260" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+                <!-- hr only appears on small devices to act as seperation when right-hand column is styled underneath the left-->
+                <div class="col d-none d-sm-block d-md-none">
+                    <hr>
                 </div>
                 <!-- Right-hand column -->
                 <div class="column col-sm-12 col-md-6">
                     <h2>Latest Video</h2>
-                    <!-- Youtube Embed iframe #1 (controls=1 allows controls to appear on video)(height & width styled in CSS to allow responsive design)-->
-                    <p>Check out <strong>"Hello Adventure"</strong> over on Youtube</p>
+                    <!-- Youtube Embed iframe - Video 1 (controls=1 allows controls to appear on video)(height & width styled in CSS to allow responsive design)-->
+                    <p>Check out <strong>"Hello Adventure"</strong> on Youtube</p>
                     <div class="yt-container">
                         <iframe src="https://www.youtube-nocookie.com/embed/DJQ0X-z65oQ?controls=1"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
+                    <hr>
+                    <!-- Youtube Embed iframe - Video 2 (loading=lazy as not at the top of the page, save on resources)-->
+                    <p>Dance in the dark to <strong>"Streetlights"</strong></p>
+                    <div class="yt-container">
+                        <iframe src="https://www.youtube.com/embed/2U6JxV2Nn48?controls=1" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <hr>
+                    <!-- Youtube Embed iframe - Video 3 (loading=lazy again) (1:1 square video format)-->
+                    <p>Live the<strong>"High Life"</strong> right now!</p>
+                    <div class="yt-container-square">
+                        <iframe src="https://www.youtube.com/embed/i6v7FPgBi9U" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
         </section>
     </article>
+    <!-- hr used stylistically to separate the sections-->
     <hr>
     <!-- Section 2 (Store) -->
     <article class="index_store">
