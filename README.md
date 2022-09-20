@@ -33,10 +33,20 @@ rm .vscode/uptime.sh
 
 ## Introduction
 
----
 **A website for the Newport-based Alt. Rock Band.**
 
 ***Personal aims & overview of site***
+
+## Links
+
+[Live Site](/)
+
+[Developers Profile](https://github.com/Hadokane)
+
+[Commit Log](https://github.com/Hadokane/CI_PP1_Oversights/commits?author=Hadokane&since=2022-08-31&until=2022-09-20)
+
+---
+
 
 ## Table of Contents
 
@@ -187,12 +197,12 @@ Let's hope very few!
     This time to achieve a 9:16 Aspect Ratio instead I used the default height & width values (350/621=1.7778) to determine that "177.78" would be the perfect size for padding.
     
     I adjusted this further to remove some unneccesary blank space from the widget.
-
-3. Couldn't find a property to change the image sizes within Bootstraps card system. Led to uneven sizing across cards which looks untidy and distracting.
-        ![Before](docs/screenshots/merch_before.png)
+---
+3. Couldn't find a property to change the image sizes within Bootstraps card system. Led to uneven sizing across cards which looks untidy and distracting. Expected adding h-100 to the class would fix it but this only made sure the cards themselves were the same size, not the space occupied by their contents.
+        ![Before_merch](docs/screenshots/merch_before.png)
         
 Decided to simply resize the images to all have the same proportions within Photoshop and then replace the ones in use. A simple solution that achieved the results I wanted without any code changes.
-        ![After](docs/screenshots/merch_after.png)
+        ![After_merch](docs/screenshots/merch_after.png)
 
 
 ## Future Enhancements
