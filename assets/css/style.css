@@ -185,7 +185,6 @@ hr {
 /*--- Card style "Sass" overrides (found using Chrome Dev Tools)*/
 
 .card {
-    --bs-card-border-width: 1px;
     /*--- use to set custom border colour*/
     --bs-card-border-color: var(--bs-border-color-translucent);
     --bs-border-color-translucent: black;
@@ -199,4 +198,19 @@ hr {
 .index_promo,
 .index_store {
     padding-bottom: 20px;
+}
+
+/*--- Creates a consistent look between the 3rd party elements and card stylings set above ---*/
+.bc-container iframe,
+.spotify-container,
+.yt-container,
+.yt-container-square {
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+}
+
+/*--- Removes additional whitespace which was visible after adding the above border to the box, used chrome dev tools to find the iframes size compared to the divs and changed the height accordingly ---*/
+div .spotify-container{
+    height: 268px;
 }
