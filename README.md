@@ -188,6 +188,13 @@ Let's hope very few!
     
     I adjusted this further to remove some unneccesary blank space from the widget.
 
+3. Couldn't find a property to change the image sizes within Bootstraps card system. Led to uneven sizing across cards which looks untidy and distracting.
+        ![Before](docs/screenshots/merch_before.png)
+        
+Decided to simply resize the images to all have the same proportions within Photoshop and then replace the ones in use. A simple solution that achieved the results I wanted without any code changes.
+        ![After](docs/screenshots/merch_after.png)
+
+
 ## Future Enhancements
 
 Further store functionality to remove third party website dependency?
