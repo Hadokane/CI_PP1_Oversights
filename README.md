@@ -197,12 +197,32 @@ Let's hope very few!
     This time to achieve a 9:16 Aspect Ratio instead I used the default height & width values (350/621=1.7778) to determine that "177.78" would be the perfect size for padding.
     
     I adjusted this further to remove some unneccesary blank space from the widget.
----
-3. Couldn't find a property to change the image sizes within Bootstraps card system. Led to uneven sizing across cards which looks untidy and distracting. Expected adding h-100 to the class would fix it but this only made sure the cards themselves were the same size, not the space occupied by their contents.
+    ---
+
+3. Couldn't find a property to change the image sizes within Bootstraps card system. Led to uneven sizing across cards which looks untidy and distracting. Expected adding h-100 to the class would fix it  but this only made sure the cards themselves were the same size, not the space occupied by their contents.
         ![Before_merch](docs/screenshots/merch_before.png)
         
-Decided to simply resize the images to all have the same proportions within Photoshop and then replace the ones in use. A simple solution that achieved the results I wanted without any code changes.
+    Decided to simply resize the images to all have the same proportions within Photoshop and then replace the ones in use. A simple solution that achieved the results I wanted without any code changes.
         ![After_merch](docs/screenshots/merch_after.png)
+
+---
+
+4. one of my <-hr-> elements was larger than others. (CSS added specifically for the screenshots to make the problem more visible).
+The element was making use of bootstrap code in order to appear only on small devices.
+
+
+    ![bug_4](docs/screenshots/bug_hr.png)
+
+
+SOLUTION: Wrap the initial code within a <-div class="col"-> in order to have it conform to Bootstraps styling.
+
+    <div class="col">
+        <hr class="d-none d-sm-block d-md-none">
+    </div>
+---
+   ![bug_4_fix](docs/screenshots/bug_hr_fix.png)
+
+---
 
 
 ## Future Enhancements
