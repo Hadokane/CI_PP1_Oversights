@@ -24,6 +24,7 @@ h2,
 }
 
 h2 {
+    padding-bottom: 10px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -44,7 +45,7 @@ p {
 }
 
 .card a {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .card h5:hover {
@@ -127,6 +128,7 @@ hr {
     border: 0;
     background-color: transparent;
 }
+
 /*----------------------------- Modifying and overriding 3rd party embed codes to style them with*/
 
 /*--- Makes the Youtube emebed responsive, code from W3CSchools (https://www.w3schools.com/howto/howto_css_responsive_iframes.asp)*/
@@ -191,4 +193,10 @@ hr {
     --bs-card-border-width: 4px;
     --bs-card-border-radius: 0;
     --bs-card-inner-border-radius: 0;
+}
+
+/*--- provide pleasing visual space at the bottom of each individual article ---*/
+.index_promo,
+.index_store {
+    padding-bottom: 20px;
 }
