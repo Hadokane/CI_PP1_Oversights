@@ -59,7 +59,7 @@
                         </li>
                     </ul>
                     <!-- Burger Menu Social Links (when not displayed in footer sm/md devices) -->
-                    <div class="row d-none d-sm-block d-lg-none">
+                    <div class="row d-sm-block d-lg-none">
                         <!-- Full screen p to introduce social media -->
                         <div class="col-12">
                             <p>Follow us on Social Media:</p>
@@ -128,19 +128,22 @@
 
         <!-- Modal -->
         <div class="container">
-            <div class="modal fade" id="gallery_1" tabindex="-1" aria-labelledby="ModalTitle" aria-hidden="true">
-                <!-- Centers the pop up & makes it fullscreen -->
-                <div class="modal-dialog modal-dialog-centered modal-fullscreen">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <p class="modal-title" id="ModalTitle">Gallery Name</p>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <!-- Contents of modal -->
-                        <div class="modal-body">
-                            <!-- img-fluid makes the image responsive to resizing the page, img-thumbnail adds border -->
-                            <img src="assets/images/tiki_logo.png" class="img-fluid img-thumbnail hover-shadow"
-                                alt="Tiki Logo Image" />
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3">
+                <div class="modal fade" id="gallery_1" tabindex="-1" aria-labelledby="ModalTitle" aria-hidden="true">
+                    <!-- Centers the pop up & makes it fullscreen -->
+                    <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="modal-title" id="ModalTitle">Gallery Name</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <!-- Contents of modal -->
+                            <div class="modal-body">
+                                <!-- img-fluid makes the image responsive to resizing the page, img-thumbnail adds border -->
+                                <img src="assets/images/tiki_logo.png" class="img-fluid img-thumbnail hover-shadow"
+                                    alt="Tiki Logo Image" />
+                            </div>
                         </div>
                     </div>
                 </div>
