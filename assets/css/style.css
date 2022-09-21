@@ -24,6 +24,7 @@ h2,
     text-transform: uppercase;
 }
 
+h1,
 h2 {
     padding-bottom: 10px;
     text-align: center;
@@ -67,6 +68,18 @@ hr {
     /* old IE */
     background-color: rgba(1, 1, 1, .75)
         /* Modern Browsers */
+}
+
+/*----------------------------- Alert Styling*/
+
+.alert-info {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+.alert-info a {
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
 }
 
 /*----------------------------- Navbar Styling*/
