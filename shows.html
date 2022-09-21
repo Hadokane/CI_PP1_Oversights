@@ -98,7 +98,7 @@
         <!--Page Break added for stylistic purposes and to preserve the visibility of the drop shadow effect from the nav -->
         <hr>
     </header>
-    <!-- Section 1 Alert -->
+    <!-- Section 1 - Alert -->
     <section class="container text-center">
         <div class="row">
             <div class="col d-flex justify-content-center">
@@ -109,48 +109,172 @@
                 </div>
             </div>
         </div>
-        <!-- Section 1 Heading -->
-        <div class="row">
-            <div class="column">
-                <h1>Recent Shows</h1>
-                <p>Subheading <strong>goes here</strong></p>
-            </div>
-        </div>
     </section>
-    <hr>
-    <!-- First Modal -->
+    <!-- Section 2 - Image Carousel -->
     <section class="container text-center">
-        <!-- Trigger for first modal -->
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#gallery_1">
-            <p>View Gallery #1</p> <img src="assets/images/tiki_logo.png" class="img-fluid img-thumbnail hover-shadow"
-                alt="Tiki Logo Image">
-        </button>
-
-        <!-- Modal -->
-        <div class="container">
-            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3">
-                <div class="modal fade" id="gallery_1" tabindex="-1" aria-labelledby="ModalTitle" aria-hidden="true">
-                    <!-- Centers the pop up & makes it fullscreen -->
-                    <div class="modal-dialog modal-dialog-centered modal-fullscreen">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <p class="modal-title" id="ModalTitle">Gallery Name</p>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <!-- Contents of modal -->
-                            <div class="modal-body">
-                                <!-- img-fluid makes the image responsive to resizing the page, img-thumbnail adds border -->
-                                <img src="assets/images/tiki_logo.png" class="img-fluid img-thumbnail hover-shadow"
-                                    alt="Tiki Logo Image" />
-                            </div>
+        <div class="row">
+            <div class="column col-sm-12 justify-content-center text-center">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <!-- Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <!-- Images in gallery -->
+                        <div class="carousel-item active">
+                            <img src="assets/images/live_gallery/header/img_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/live_gallery/header/img_2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/live_gallery/header/img_3.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <hr>
+    <!-- Section 3 - Cards & Modal Section -->
+    <div class="row">
+        <div class="column">
+            <h1>Recent Shows</h1>
+            <!-- First Modal Card -->
+            <section class="container text-center">
+                <!-- Card Contents -->
+                <div class="col">
+                    <div class="card">
+                        <!-- Trigger for modal / card-img-top limits height of class -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#gallery_1">
+                            <p>Le Pub - 17/02/19</p> <img src="assets/images/live_gallery/le_pub/poster_1.jpg"
+                                style="object-fit: cover;" height="80px" width="100%" alt="Gig Poster">
+                        </button>
+                        <!-- Modal Contents -->
+                        <div class="modal fade" id="gallery_1" tabindex="-1" aria-labelledby="Photos from Gallery 1"
+                            aria-hidden="true">
+                            <!-- Centers the pop up & makes it fullscreen -->
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <p class="modal-title" id="ModalTitle">Le Pub - 17/02/19</p>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <!-- Modal Body -->
+                                    <div class="modal-body">
+                                        <!-- img-fluid makes the image responsive to resizing the page, img-thumbnail adds border -->
+                                        <img src="assets/images/live_gallery/le_pub/poster_1.jpg"
+                                            class="img-fluid img-thumbnail hover-shadow" alt="Live Image" />
+                                        <img src="assets/images/live_gallery/le_pub/img_1.jpg"
+                                            class="img-fluid img-thumbnail hover-shadow" alt="Live Image" />
+                                        <img src="assets/images/live_gallery/le_pub/img_3.jpg"
+                                            class="img-fluid img-thumbnail hover-shadow" alt="Live Image" />
+                                        <img src="assets/images/live_gallery/le_pub/img_4.jpg"
+                                            class="img-fluid img-thumbnail hover-shadow" alt="Live Image" />
+                                        <img src="assets/images/live_gallery/le_pub/img_5.jpg"
+                                            class="img-fluid img-thumbnail hover-shadow" alt="Live Image" />
+                                        <img src="assets/images/live_gallery/le_pub/img_6.jpg"
+                                            class="img-fluid img-thumbnail hover-shadow" alt="Live Image" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <!-- Second Modal Card -->
+            <section class="container text-center">
+                <!-- Card Contents -->
+                <div class="col">
+                    <div class="card">
+                        <!-- Trigger for modal / style object-fit allows the image to "cover" the defined card space -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#gallery_2">
+                            <p>Dragonffli - 13/05/22</p> <img src="assets/images/live_gallery/dragonffli/poster_1.jpg"
+                                style="object-fit: cover;" height="80px" width="100%" alt="Gig Poster">
+                        </button>
+                        <!-- Modal Contents -->
+                        <div class="modal fade" id="gallery_2" tabindex="-1" aria-labelledby="Photos from Gallery 2"
+                            aria-hidden="true">
+                            <!-- Centers the pop up & makes it fullscreen -->
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <p class="modal-title" id="ModalTitle">Dragonffli - 13/05/22</p>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <!-- Modal Body -->
+                                    <div class="modal-body">
+                                        <!-- img-fluid makes the image responsive to resizing the page, img-thumbnail adds border -->
+                                        <img src="assets/images/live_gallery/dragonffli/poster_1.jpg"
+                                            class="img-fluid img-thumbnail hover-shadow" alt="Live Image" />
+                                        <img src="assets/images/live_gallery/dragonffli/img_1.jpg"
+                                            class="img-fluid img-thumbnail hover-shadow" alt="Live Image" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <!-- Third Modal Card -->
+            <section class="container text-center">
+                <!-- Card Contents -->
+                <div class="col">
+                    <div class="card">
+                        <!-- Trigger for modal / style object-fit allows the image to "cover" the defined card space -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#gallery_3">
+                            <p>The Weekend Rumble - 2022</p> <img
+                                src="assets/images/live_gallery/weekend_rumble/img_1.jpg" style="object-fit: cover;"
+                                height="80px" width="100%" alt="Gig Poster">
+                        </button>
+                        <!-- Modal Contents -->
+                        <div class="modal fade" id="gallery_3" tabindex="-1" aria-labelledby="Photos from Gallery 3"
+                            aria-hidden="true">
+                            <!-- Centers the pop up & makes it fullscreen -->
+                            <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <p class="modal-title" id="ModalTitle">The Weekend Rumble - 2022</p>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <!-- Modal Body -->
+                                    <div class="modal-body">
+                                        <!-- img-fluid makes the image responsive to resizing the page, img-thumbnail adds border -->
+                                        <img src="assets/images/live_gallery/weekend_rumble/img_1.jpg"
+                                            class="img-fluid img-thumbnail hover-shadow" alt="Live Image" />
+                                        <img src="assets/images/live_gallery/weekend_rumble/img_2.jpg"
+                                            class="img-fluid img-thumbnail hover-shadow" alt="Live Image" />
+                                        <img src="assets/images/live_gallery/weekend_rumble/img_3.jpg"
+                                            class="img-fluid img-thumbnail hover-shadow" alt="Live Image" />
+                                        <img src="assets/images/live_gallery/weekend_rumble/img_4.jpg"
+                                            class="img-fluid img-thumbnail hover-shadow" alt="Live Image" />
+                                        <img src="assets/images/live_gallery/weekend_rumble/img_5.jpg"
+                                            class="img-fluid img-thumbnail hover-shadow" alt="Live Image" />
+                                        <img src="assets/images/live_gallery/weekend_rumble/img_6.jpg"
+                                            class="img-fluid img-thumbnail hover-shadow" alt="Live Image" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+        </div>
+    </div>
+    <!-- hr used stylistically to separate the sections, padding removed for footer to sit flush -->
 
+    <br>
     <!-- hr used stylistically to separate the sections, padding removed for footer to sit flush -->
     <hr class="footer_hr">
     <!-- Footer -->
