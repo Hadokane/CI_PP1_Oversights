@@ -99,7 +99,7 @@
         <hr>
     </header>
     <!-- Section 1 Alert -->
-    <section class="container">
+    <section class="container text-center">
         <div class="row">
             <div class="col d-flex justify-content-center">
                 <!-- Alert - notice for people looking to book us for events -->
@@ -114,6 +114,36 @@
             <div class="column">
                 <h1>Recent Shows</h1>
                 <p>Subheading <strong>goes here</strong></p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- First Modal -->
+    <section class="container text-center">
+        <!-- Trigger for first modal -->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#gallery_1">
+            <p>View Gallery #1</p> <img src="assets/images/tiki_logo.png" class="img-fluid img-thumbnail hover-shadow"
+                alt="Tiki Logo Image">
+        </button>
+
+        <!-- Modal -->
+        <div class="container">
+            <div class="modal fade" id="gallery_1" tabindex="-1" aria-labelledby="ModalTitle" aria-hidden="true">
+                <!-- Centers the pop up & makes it fullscreen -->
+                <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <p class="modal-title" id="ModalTitle">Gallery Name</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- Contents of modal -->
+                        <div class="modal-body">
+                            <!-- img-fluid makes the image responsive to resizing the page, img-thumbnail adds border -->
+                            <img src="assets/images/tiki_logo.png" class="img-fluid img-thumbnail hover-shadow"
+                                alt="Tiki Logo Image" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
