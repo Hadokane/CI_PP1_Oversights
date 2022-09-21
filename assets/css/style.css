@@ -8,7 +8,8 @@ font-family: 'Rubik Mono One', sans-serif; */
 /*----------------------------- Removes default margins to remove unwanted space*/
 h1,
 h2,
-p {
+p,
+.footer_hr {
     margin: 0;
     padding: 0;
 }
@@ -88,12 +89,19 @@ hr {
     margin-right: 15px;
 }
 
-/*--- Adds a dropshadow to the navbar. [Parameters: horizontal, vertical, blur, spread, colour] Z-index used to ensure it's shown on top of other sections.*/
+/*--- Adds a dropshadow to the navbar. [Parameters: horizontal, vertical, blur, spread, colour] Z-index used to ensure it's shown on top of other sections*/
 .navbar {
     position: relative;
     z-index: 1;
     box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.05);
     margin-bottom: 60px;
+}
+
+/*--- Subtle dropshadow above the footer*/
+.footer_hr {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
 
 /*----------------------------- Navbar Sass code found using Chrome Dev Tools, used to style navbar further and get around inbuilt styling*/
@@ -211,6 +219,6 @@ hr {
 }
 
 /*--- Removes additional whitespace which was visible after adding the above border to the box, used chrome dev tools to find the iframes size compared to the divs and changed the height accordingly ---*/
-div .spotify-container{
+div .spotify-container {
     height: 268px;
 }
