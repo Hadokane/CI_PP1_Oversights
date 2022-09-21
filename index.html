@@ -55,6 +55,34 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
+                    <!-- Burger Menu Social Links (when not displayed in footer sm/md devices) -->
+                    <div class="row d-none d-sm-block d-lg-none">
+                        <!-- Full screen p to introduce social media -->
+                        <div class="col-12">
+                            <p>Follow us on Social Media:</p>
+                        </div>
+                        <!-- Social Links -->
+                        <div class="col d-flex justify-content-evenly">
+                            <!-- Bandcamp -->
+                            <a class="btn btn-secondary btn-floating m-1" href="#" role="button"
+                                style="background-color: #629aa9"><i class="fab fa-bandcamp"></i></a>
+                            <!-- Facebook -->
+                            <a class="btn btn-primary btn-floating m-1" href="#" role="button"
+                                style="background-color: #4267B2"><i class="fab fa-facebook"></i></a>
+                            <!-- Instagram -->
+                            <a class="btn btn-dark btn-floating m-1" href="#" role="button"
+                                style="background-color: #C13584" Insta dark pink><i class="fab fa-instagram"></i></a>
+                            <!-- Spotify -->
+                            <a class="btn btn-dark btn-floating m-1" href="#" role="button"
+                                style="background-color: #1DB954" Spotify green><i class="fab fa-spotify"></i></a>
+                            <!-- Twitter -->
+                            <a class="btn btn-dark btn-floating m-1" href="#" role="button"
+                                style="background-color: #1DA1F2"><i class="fab fa-twitter"></i></a>
+                            <!-- Youtube -->
+                            <a class="btn btn-dark btn-floating m-1" href="#" role="button"
+                                style="background-color: #FF0000"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -141,7 +169,8 @@
                             alt="The Oversights' debut E.P. Hello Adventure. Digital download edition">
                         <div class="card-body">
                             <a class="card-title" href="https://theoversights.bandcamp.com/album/hello-adventure">
-                                <h5>Hello Adventure: Digital Download</h5>
+                                <h5>Hello Adventure: Digital Download<br><i class="fa-solid fa-cart-plus"></i></h5>
+
                             </a>
                             <p class="card-text">The 5 track debut from The Oversights featuring the singles:
                                 <strong>"Coasting",
@@ -156,12 +185,12 @@
                             alt="The Oversights' debut E.P. Hello Adventure. Physical edition">
                         <div class="card-body">
                             <a class="card-title" href="https://theoversights.bandcamp.com/album/hello-adventure">
-                                <h5>Hello Adventure: Physical Edition</h5>
+                                <h5>Hello Adventure: Physical Edition<br><i class="fa-solid fa-cart-plus"></i></h5>
                             </a>
                             <p class="card-text">A gatefold, card case with a <strong>vinyl effect</strong> CD.
-                                <br>Featuring
-                                exclusive artwork by Gut42.<br>
-                                Ships within 2 days via Royal Mail to UK destinations.</p>
+                                <br>Featuring exclusive artwork by Gut42.</p>
+                            <hr>
+                            <p><em>Ships within 2 days via Royal Mail.</em></p>
                         </div>
                     </div>
                 </div>
@@ -172,11 +201,12 @@
                         <div class="card-body">
                             <a class="card-title"
                                 href="https://theoversights.bandcamp.com/merch/hello-adventure-tiki-head-t-shirt">
-                                <h5>Limited Edition: Tiki Head T-Shirt</h5>
+                                <h5>Limited Edition: Tiki Head T-Shirt<br><i class="fa-solid fa-cart-plus"></i></h5>
                             </a>
                             <p class="card-text"><strong>Limited run</strong> of Tiki Head T-Shirts in Stone.<br>
-                                Printed on Black Gildan Heavy shirts with Plastisol Screen Printed Ink.<br><em>XS-XXL
-                                    available.</em></p>
+                                Printed on Black Gildan Heavy shirts with Plastisol Screen Printed Ink.<br></p>
+                            <hr>
+                            <p><em>XS-XXL available.</em></p>
                         </div>
                     </div>
                 </div>
@@ -187,9 +217,11 @@
                             alt="An adventure sticker bundle pack">
                         <div class="card-body">
                             <a class="card-title" href="https://theoversights.bandcamp.com/merch">
-                                <h5>Sticker Bundle Pack</h5>
+                                <h5>Sticker Bundle Pack<br><i class="fa-solid fa-cart-plus"></i></h5>
                             </a>
-                            <p class="card-text"><em>Coming Soon</em><br>A sticker bundle pack featuring
+                            <p class="card-text"><em>Coming Soon</em></p>
+                            <hr>
+                            <p>A sticker bundle pack featuring
                                 <strong>exclusive artwork</strong>
                                 from Hello Adventure.
                             </p>
@@ -207,38 +239,43 @@
         <section class="container">
             <!-- Section: Social Links -->
             <div class="row">
-                <!-- Left-hand column -->
-                <div class="col d-flex align-items-center text-center p-3">
-                    <!-- Bandcamp -->
-                    <a class="btn btn-dark btn-floating m-1" href="#" role="button" style="background-color: #629aa9"><i
-                            class="fab fa-bandcamp"></i></a>
-                    <!-- Facebook -->
-                    <a class="btn btn-dark btn-floating m-1" href="#" role="button" style="background-color: #4267B2"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <!-- Instagram -->
-                    <a class="btn btn-dark btn-floating m-1" href="#" role="button" style="background-color: #C13584"
-                        Insta dark pink><i class="fab fa-instagram"></i></a>
-                    <!-- Spotify -->
-                    <a class="btn btn-dark btn-floating m-1" href="#" role="button" style="background-color: #1DB954"
-                        Spotify green><i class="fab fa-spotify"></i></a>
-                    <!-- Twitter -->
-                    <a class="btn btn-dark btn-floating m-1" href="#" role="button" style="background-color: #1DA1F2"><i
-                            class="fab fa-twitter"></i></a>
-                    <!-- Youtube -->
-                    <a class="btn btn-dark btn-floating m-1" href="#" role="button" style="background-color: #FF0000"><i
-                            class="fab fa-youtube"></i></a>
+                <!-- Left-hand column (Appears in drop down nav bar when on sm/md devices to improve visibility)-->
+                <div class="col p-3 d-none d-lg-block">
+                    <!-- Aligns Left -->
+                    <div class="d-flex justify-content-start ">
+                        <!-- Bandcamp -->
+                        <a class="btn btn-secondary btn-floating m-1" href="#" role="button"
+                            style="background-color: #629aa9"><i class="fab fa-bandcamp"></i></a>
+                        <!-- Facebook -->
+                        <a class="btn btn-primary btn-floating m-1" href="#" role="button"
+                            style="background-color: #4267B2"><i class="fab fa-facebook"></i></a>
+                        <!-- Instagram -->
+                        <a class="btn btn-dark btn-floating m-1" href="#" role="button"
+                            style="background-color: #C13584" Insta dark pink><i class="fab fa-instagram"></i></a>
+                        <!-- Spotify -->
+                        <a class="btn btn-dark btn-floating m-1" href="#" role="button"
+                            style="background-color: #1DB954" Spotify green><i class="fab fa-spotify"></i></a>
+                        <!-- Twitter -->
+                        <a class="btn btn-dark btn-floating m-1" href="#" role="button"
+                            style="background-color: #1DA1F2"><i class="fab fa-twitter"></i></a>
+                        <!-- Youtube -->
+                        <a class="btn btn-dark btn-floating m-1" href="#" role="button"
+                            style="background-color: #FF0000"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
                 <!-- Center column -->
-                <div class="col">
-                    <div class="flex align-items-center text-center p-3">
+                <div class="col p-3">
+                    <!-- Aligns center -->
+                    <div class="d-flex justify-content-center">
                         <!-- Back to top of screen button -->
                         <a class="btn btn-primary btn-floating m-1" href="#top" role="button">
                             <i class="fa-solid fa-angles-up"></i></a>
                     </div>
                 </div>
-                <!-- Right-hand column -->
-                <div class="col">
-                    <div class="flex align-items-center text-center p-3">
+                <!-- Right-hand column (Only appears on lg devices, people aren't coding on phones/tablets so no reason to show Gitlink) -->
+                <div class="col p-3 d-none d-lg-block">
+                    <!-- Aligns right -->
+                    <div class="d-flex justify-content-end">
                         <!-- Github Link -->
                         <a class="btn btn-dark btn-floating m-1" href="#" role="button" style="background-color: #333">
                             <i class="fab fa-github"></i></a>
