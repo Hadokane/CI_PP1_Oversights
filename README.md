@@ -1,54 +1,55 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![OvsLogo](assets/images/stickers/Asset%201.png)
 
-This is the README.md file for my Code Institute project.
+# The Oversights - Band Website
 
-I'm currently laying out a "project skeleton" for Initial Commit purposes and will be updating
-this more and more as I progress through the project.
+## The digital home of the Newport based rock band.
 
-## Python Reminder
+**Developer Links:**
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+*(Right-click to open in new tab/window)*
 
-`python3 -m http.server`
-
-**List Example**
-
-- Item 1
-- Item 2
-- Item 3
-
-**Example**
-
-Examples of code in a box.
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-    or just press tab to indent.
-
----
-
-# The Oversights
-
-## Introduction
-
-**A website for the Newport-based Alt. Rock Band.**
-
-***Personal aims & overview of site***
-
-## Links
-
-[Live Site](/)
-
-[Developers Profile](https://github.com/Hadokane)
+[Developer - HK_Dev](https://github.com/Hadokane "Hadokane - Github")
 
 [Commit Log](https://github.com/Hadokane/CI_PP1_Oversights/commits?author=Hadokane&since=2022-08-31&until=2022-09-20)
 
----
+**Live Website Link:**
 
+[Live Website - The Oversights](https://hadokane.github.io/CI_PP1_Oversights/ "The Oversights")
+
+**Repository Pages:**
+
+[Repository page - Index.html](../CI_PP1_Oversights/index.html)
+
+[Repository page - Music.html](../CI_PP1_Oversights/music.html)
+
+[Repository page - Shows.html](../CI_PP1_Oversights/shows.html)
+
+[Repository page - Contact.html](../CI_PP1_Oversights/contact.html)
+
+[Repository page - Thanks.html](../CI_PP1_Oversights/thanks.html)
+
+## Academic Project Aims
+
+I am currently pursuing my **Diploma in Web App Development** from [Code Institute](https://codeinstitute.net/ "code institute").
+
+The academic aim of this project is to demonstrate my newly developed skills within the HTML & CSS languages.
+
+I intend to display this throughout the project via my: coding, comments, commits and explination provided by this README file.
+
+As such no other programming languages are used directly, however additional functionality is provided by the framework [Bootstrap 5.2](https://getbootstrap.com/) & a functional email form is present thanks to [Formsubmit](https://formsubmit.co/).
+
+Great care has been taken to ensure that the website has been designed to best practices and is responsive on all screen resolutions.
+
+It has been tested on a variety of devices, from mobiles to 4k resolution monitors and has proven compatiblity with all popular web browsers.
 
 ## Table of Contents
+
+1. [Project Goals](#project-goals)
+    - [User Goals](#user-goals)
+    - [Site Owner Goals](#site-owner-goals)
+2. [UX]
+    -
+    -
 
 ---
 
@@ -80,6 +81,17 @@ Info goes here.
 
 ### Design choices
 
+Kept website colours down to a minimum pallet of Black & White to reduce chances of visual noise/overwhelming visuals. Benefits being the colourful album covers and 
+colourful backgrounds used on images are then able to draw the eye of the visitor ensuring they can find what they're looking for and the band are able to increase their chances
+of selling merchandise or garnering listens and views. Simple colours are also a classic choices that conform to good design, allowing for a sleek, minimalistic modern look.
+
+Possibly change all sizes to em instead of pixels down the line as it's responsive to the browser functions of zooming in the page. Good for visually impared users, set overflows to ensure text isn't cropped or lost.
+
+Maybe Add a gallery page or gigs section?
+Link externally for videos and have footer section with social links appear in bar when on small/medium devices.
+Internal page for MUSIC: SHOW EP, Drop down menus for lyrics to each song. Info on each band member and mini gallery of video stills from the EP on this page if no gallery page added.
+Drop down under music 1 - Hello Adventure, 2 - Coming soon (make it an inactive link.)
+
 ---
 
 **Features**
@@ -109,7 +121,10 @@ Info goes here.
 
 **Colour Pallet**
 
-Info goes here.
+Black & White is timeless! The bands branding will evolve over time, colour pallets will change. I'd initially concidered using one.
+Black & white will always work, draws users eyes to the spots of colour. BOLD Yellow on links - Makes it very clear to the user what this is.
+Visually simple, modern minimalist look, has a certain edge and style to it with the bold colours making a splash. Ensures visual fidelity of images
+is maintained, artwork pops, etc.
 
 **Images & Logo Choices**
 
@@ -224,11 +239,24 @@ SOLUTION: Wrap the initial code within a <-div class="col"-> in order to have it
 
 ---
 
+5. Brand text was forcing the burger menu navbar onto the line below on smaller devices (< 450px). Bootcamp solutions
+seemed to remove my icon as well leaving the bart with no branding and moving the burger menu to it's default position of floating to the left. I decided the simplist method would be to use a media query to hide just the brand text on smaller devices. Leaving the logo present in the nav bar - to maintain branding - while keeping the nav burger menu on the right hand side where users would expect it to be.
 
-## Future Enhancements
+        /*--- Prevents the Brand text from pushing the navbar to the line below. Disappears before hand, leaving the logo visible*/
+        @media screen and (max-width: 450px) {
+            .navbar-brand{
+                width: 0;
+                font-size: 0;
+            }
+        }
+
+## Roadmap
 
 Further store functionality to remove third party website dependency?
 Mailing List implementation?
+
+https://getbootstrap.com/docs/5.2/components/pagination/
+- Add pagination to Gallery section as more gigs are played.
 
 ---
 
@@ -237,9 +265,24 @@ Mailing List implementation?
 ---
 
 1. [CI TEMPLATE](https://github.com/Code-Institute-Org/gitpod-full-template) - This repository was initially created using Code Institute's provided template.
+
 2. [Gut42](https://gut42.com/the-oversights-hello-adventure) - For his stellar, commissioned design work on The Oversights album, logos and stickers. Used with permission throughout this website to establish a strong, branded theme.
 
-1. [Markdown Guide](https://www.markdownguide.org/cheat-sheet/) - For use of their "Markdown Cheat Sheet" for the instructional purpose of writing this README.md file.
+3. [Markdown Guide](https://www.markdownguide.org/cheat-sheet/) - For use of their "Markdown Cheat Sheet" for the instructional purpose of writing this README.md file.
+
+4. https://code-boxx.com/html-scroll-to-top-button/ - Back to top of page, simple code with no Javascript.
+
+5. https://usbrandcolors.com/youtube-colors/ - Giving me the correct logo hex colors to use on the background of buttons.
+
+6. https://fontawesome.com/ - Icons
+
+7. https://compressjpeg.com/ - Compressing images to keep image size down.
+
+8. https://png2jpg.com/ - png to jpg conversion
+
+9. https://formsubmit.co/ - for functioning email form
+
+10. https://www.youtube.com/watch?v=Yg6POD0M30w&ab_channel=ADesignerWhoCodes - for tutorials on functioning email forms.
 
 ---
 
@@ -255,7 +298,9 @@ Mailing List implementation?
 
 With thanks to:
 - My fellow "Oversights" for trusting me with this task and providing helpful feedback throughout.
+
 - My family and friends - for keeping me on task and providing a helpful eye or a pair of testing hands when needed.
+
 - Code Institute & it's community at large, for providing me with the necessary skills, knowledge and guidance to pull this project off.
 
 [Back to top ↑](#the-oversights)
