@@ -112,45 +112,39 @@
             <hr>
         </section>
         <!-- Contact form -->
-        <section class="container">
-            <div class="row">
-                <div class="col">
-                    <!-- Form -->
-                    <form action="email_confirm.html" method="GET">
-                        <div class="form-row">
-                            <div class="input-group">
-                                <input class="contact-input" type="text" id="name" required>
-                                <label for="name" class="contact-label"><i class="fas fa-user"></i> Your
-                                    Name</label>
-                            </div>
-                            <div class="input-group">
-                                <input class="contact-input" type="email" id="email" required>
-                                <label for="email" class="contact-label"><i class="fas fa-envelope"></i> Your
-                                    Email</label>
-                            </div>
-                        </div>
-
-                        <div class="input-group">
-                            <input class="contact-input" type="text" id="subject" required>
-                            <label for="subject" class="contact-label"><i class="fa-solid fa-pen"></i>
-                                Subject</label>
-                        </div>
-                        <div class="input-group">
-                            <textarea class="contact-textarea" id="message" rows="8" required></textarea>
-                            <label for="message" class="contact-label"><i class="fas fa-comments"></i> Your
-                                Message</label>
-                        </div>
-                        <button class="contact-btn" type="submit">SEND <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form> 
-                    <!-- End of Form -->
-                    <!-- Sticker img -->
-                    <div class="col justify-content-center">
-                        <img src="assets/images/stickers/Asset 7.png" class="img-fluid mx-auto d-block">
-                    </div>
+        <div class="container">
+            <form class="row g-3">
+                <!-- Name Field -->
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="John Doe" required>
                 </div>
+                <!-- Email Field -->
+                <div class="col-md-6">
+                    <label for="emailInfo" class="form-label">Email</label>
+                    <input type="email" class="form-control" id-="emailInfo" placeholder="john.doe@example.com" required>
+                </div>
+                <!-- Name Field -->
+                <div class="col-md-6">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="name" placeholder="Great opportunity" required>
+                </div>
+                <!-- Text Field -->
+                <div class="col-md-12">
+                    <label for="info" class="form-label">Comments</label>
+                    <textarea class="form-control" id="info" rows="4" required></textarea>
+                </div>
+                <!-- Button -->
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </form>
+
+            <!-- Sticker img -->
+            <div class="col justify-content-center">
+                <img src="assets/images/stickers/Asset 7.png" class="img-fluid mx-auto d-block">
             </div>
-        </section>
+        </div>
 
         <!-- br for footer spacing -->
         <br>
