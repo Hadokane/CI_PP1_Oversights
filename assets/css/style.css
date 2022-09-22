@@ -17,6 +17,7 @@ p,
 /*----------------------------- Text Styling*/
 h1,
 h2,
+h3,
 .card h5 {
     color: black;
     font-family: 'Karla', sans-serif;
@@ -39,6 +40,30 @@ p {
     text-align: center;
     text-transform: capitalize;
 }
+
+/*----------------------------- Paragraph styling for Albums page*/
+.ep-info p {
+    color: black;
+    background-color: transparent;
+}
+
+/*----------------------------- Vertical Line, match aside style*/
+.vl {
+    height: 100%;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    color: #000000;
+    padding-left: 10px;
+  }
+
+  .vl-right {
+    height: 100%;
+    float: left;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    color: #000000;
+    padding-left: 10px;
+  }
+
 
 /*----------------------------- card Styling*/
 
@@ -70,8 +95,14 @@ hr {
         /* Modern Browsers */
 }
 
+.hr_invisible {
+    height: 0px;
+    margin-bottom: 25px;
+}
+
 /*----------------------------- Alert Styling*/
 
+aside,
 .alert-info {
     font-family: 'Karla', sans-serif;
     font-weight: 400;
@@ -80,6 +111,16 @@ hr {
 .alert-info a {
     font-family: 'Karla', sans-serif;
     font-weight: 600;
+}
+
+/*----------------------------- Aside Styling*/
+aside {
+    width: 100%;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #000000;
+    padding-left: 10px;
 }
 
 /*----------------------------- Navbar Styling*/
