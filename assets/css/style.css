@@ -133,6 +133,19 @@ aside {
     margin-right: 16px;
 }
 
+/*--- Brand text sizing*/
+.navbar-brand {
+    font-size: 24px;
+}
+
+/*--- Prevents the Brand text from pushing the navbar to the line below. Disappears before hand, leaving the logo visible*/
+@media screen and (max-width: 450px) {
+    .navbar-brand{
+        width: 0;
+        font-size: 0;
+    }
+}
+
 /*--- Style Navbar Links*/
 .navbar-container a {
     color: white;
