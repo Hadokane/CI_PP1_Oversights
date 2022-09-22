@@ -1,13 +1,10 @@
-/*----------------------------- Imports Google Font Families - Nanum Pen Script, Karla(200-800) & Rubik Mono One*/
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Nanum+Pen+Script&family=Rubik+Mono+One&display=swap');
+/*----------------------------- Imports Google Font Families - Karla(200-800) & Rubik Mono One*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Rubik+Mono+One&display=swap');
 
-/* font-family: 'Karla', sans-serif;
-font-family: 'Nanum Pen Script', cursive;
-font-family: 'Rubik Mono One', sans-serif; */
-
-/*----------------------------- Removes default margins to remove unwanted space*/
+/*----------------------------- Removes default margins & padding to clear unwanted space*/
 h1,
 h2,
+h3,
 p,
 .footer_hr {
     margin: 0;
@@ -15,66 +12,53 @@ p,
 }
 
 /*----------------------------- Text Styling*/
+/*--- Headings (h5 used for cards)*/
 h1,
 h2,
 h3,
-.card h5 {
+.card h5,
+p {
     color: black;
     font-family: 'Karla', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
+    text-align: center;
 }
 
+/*--- Vertical space given under headings, aligned & styled*/
 h1,
 h2 {
     padding-bottom: 10px;
-    text-align: center;
     text-transform: uppercase;
 }
 
+/*--- provide pleasing visual space at the bottom of each individual article ---*/
+.index_promo,
+.index_store {
+    padding-bottom: 20px;
+}
+
+/*--- Paragraph styled further, given black backgrounds & off-white colour to improve visibility on white backgrounds*/
 p {
     color: antiquewhite;
     background-color: black;
-    font-family: 'Karla', sans-serif;
     font-weight: 400;
-    text-align: center;
     text-transform: capitalize;
 }
 
-/*----------------------------- Paragraph styling for Albums page*/
+/*--- Paragraph styling for Music page only. Removes background. Resemble a news article in style.*/
 .ep-info p {
     color: black;
     background-color: transparent;
 }
 
-/*----------------------------- Vertical Line, match aside style*/
-.vl {
-    height: 100%;
-    float: right;
-    box-shadow: inset 5px 0 5px -5px #29627e;
-    color: #000000;
-    padding-left: 10px;
-  }
-
-  .vl-right {
-    height: 100%;
-    float: left;
-    box-shadow: inset 5px 0 5px -5px #29627e;
-    color: #000000;
-    padding-left: 10px;
-  }
-
-
-/*----------------------------- card Styling*/
-
-.card h5 {
-    text-align: center;
-}
-
+/*----------------------------- Card Styling*/
+/*--- Removes underline on links.*/
 .card a {
     text-decoration: none;
 }
 
+/*--- Hover class used to improve user experience. Interactivity.*/
 .card h5:hover {
     color: yellow;
     border: 3px solid yellow;
@@ -83,31 +67,30 @@ p {
 }
 
 /*----------------------------- hr Styling*/
-
 hr {
     border: none;
     height: 1px;
     width: 100%;
-    /* Set the hr color */
+    /*--- Set the hr color */
     color: rgba(1, 1, 1, .25);
-    /* old IE */
+    /*--- compatibility - old versions of IE*/
     background-color: rgba(1, 1, 1, .75)
-        /* Modern Browsers */
 }
 
+/*--- Used to provide gaps between the aside without disrupting it's size & to stop the spotify element touching the footer without stopping the vl's*/
 .hr_invisible {
     height: 0px;
     margin-bottom: 25px;
 }
 
-/*----------------------------- Alert Styling*/
-
+/*----------------------------- Alert Styling (Set the fonts and weight)*/
 aside,
 .alert-info {
     font-family: 'Karla', sans-serif;
     font-weight: 400;
 }
 
+/*--- Makes anchors more eye-catching*/
 .alert-info a {
     font-family: 'Karla', sans-serif;
     font-weight: 600;
@@ -117,20 +100,40 @@ aside,
 aside {
     width: 100%;
     float: right;
-    box-shadow: inset 5px 0 5px -5px #29627e;
+    box-shadow: inset 5px 0 5px -5px #000000;
     font-style: italic;
     color: #000000;
     padding-left: 10px;
 }
 
-/*----------------------------- Navbar Styling*/
+/*----------------------------- Vertical Line with side shadow - divides music page sections & match aside style*/
+.vl {
+    height: 100%;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #000000;
+    padding-left: 10px;
+}
+
+.vl-right {
+    height: 100%;
+    float: left;
+    box-shadow: inset 5px 0 5px -5px #000000;
+    padding-left: 10px;
+}
+
+/*----------------------------- Navbar*/
 /*--- Center align text and add a backgroud color to the menu*/
 .navbar-container {
     text-align: center;
     background-color: rgba(1, 1, 1, .25)
 }
 
-/*--- Style Navbar Links */
+/*--- Provide space between the navbar icon and brand text*/
+.navbar-brand .icon {
+    margin-right: 16px;
+}
+
+/*--- Style Navbar Links*/
 .navbar-container a {
     color: white;
     font-family: 'Rubik Mono One', sans-serif;
@@ -138,9 +141,19 @@ aside {
     font-size: 16px;
 }
 
-/*--- Provide space between the navbar icon and brand text*/
-.navbar-brand .icon {
-    margin-right: 15px;
+
+/*--- Hover class used to improve user experience by creating interactivity with the clickable links*/
+.navbar-container a:hover {
+    color: yellow;
+    border: 3px solid yellow;
+    padding: 5px;
+    background-color: black;
+}
+
+/*--- remove background on active link hover to inform the user they are already on this page. Improves overall experience and provides context*/
+.navbar-container .active:hover {
+    border: 0;
+    background-color: transparent;
 }
 
 /*--- Adds a dropshadow to the navbar. [Parameters: horizontal, vertical, blur, spread, colour] Z-index used to ensure it's shown on top of other sections*/
@@ -151,6 +164,7 @@ aside {
     margin-bottom: 60px;
 }
 
+/*----------------------------- Footer*/
 /*--- Subtle dropshadow above the footer*/
 .footer_hr {
     position: relative;
@@ -158,8 +172,8 @@ aside {
     box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
 
-/*----------------------------- Navbar Sass code found using Chrome Dev Tools, used to style navbar further and get around inbuilt styling*/
-/*--- These lines allow me control over the active links color as it was seperate from the other links*/
+/*----------------------------- Sass code found using Chrome Dev Tools. Used to style navbar further and get around inbuilt bootstrap styling*/
+/*--- These lines allow me control over the active links color (as it is independently styled)*/
 .navbar-nav .nav-link.active,
 .navbar-nav .show>.nav-link {
     color: var(--bs-navbar-active-color);
@@ -177,26 +191,22 @@ aside {
     --bs-body-font-weight: 400;
 }
 
-/*--- Hover class used to improve user experience by creating interactivity with the clickable links*/
-.navbar-container a:hover {
-    color: yellow;
-    border: 3px solid yellow;
-    padding: 5px;
-    background-color: black;
+/*--- Card "Sass" overrides*/
+.card {
+    /*--- use to set custom border colour*/
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-border-color-translucent: black;
+    /*--- remove border radius*/
+    --bs-card-border-width: 4px;
+    --bs-card-border-radius: 0;
+    --bs-card-inner-border-radius: 0;
 }
 
-/*--- remove background on active link hover to inform the user they are already on this page. Improves overall experience and provides variety.*/
-.navbar-container .active:hover {
-    border: 0;
-    background-color: transparent;
-}
-
-/*----------------------------- Modifying and overriding 3rd party embed codes to style them with*/
-
+/*----------------------------- Modifying and overriding 3rd party embed codes*/
 /*--- Makes the Youtube emebed responsive, code from W3CSchools (https://www.w3schools.com/howto/howto_css_responsive_iframes.asp)*/
 .yt-container {
     overflow: hidden;
-    /* 16:9 Aspect Ratio maintained. Counteracted by adding top/bottom padding to keep in aligned based(divide 9/16=0.5625) */
+    /*--- 16:9 Aspect Ratio maintained. Counteracted by adding top/bottom padding to keep in aligned based(divide 9/16=0.5625)*/
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
@@ -213,7 +223,7 @@ aside {
 /*--- Adapting the above code to work with a 1:1 aspect ratio "square" video ---*/
 .yt-container-square {
     overflow: hidden;
-    /* 1:1 Aspect Ratio maintained. Counteracted by adding top/bottom padding to keep in aligned based(divide 1 by 1 =1) */
+    /*--- 1:1 Aspect Ratio maintained. Counteracted by adding top/bottom padding to keep in aligned based(divide 1 by 1 =1)*/
     padding-bottom: 100%;
     position: relative;
     height: 0;
@@ -230,7 +240,7 @@ aside {
 /*--- Adapted the Youtube responsive code for use with Bandcamp*/
 .bc-container {
     overflow: hidden;
-    /* 9:16 Aspect Ratio instead (divide 350 by 621 = 1.7778) so 177.78 for perfect sizing but the embed was oversized originally*/
+    /*--- 9:16 Aspect Ratio instead (divide 350 by 621 = 1.7778) so 177.78 for perfect sizing but the embed was oversized originally*/
     padding-top: 160%;
     position: relative;
     height: 0;
@@ -244,25 +254,7 @@ aside {
     position: absolute;
 }
 
-/*--- Card style "Sass" overrides (found using Chrome Dev Tools)*/
-
-.card {
-    /*--- use to set custom border colour*/
-    --bs-card-border-color: var(--bs-border-color-translucent);
-    --bs-border-color-translucent: black;
-    /*--- remove border radius*/
-    --bs-card-border-width: 4px;
-    --bs-card-border-radius: 0;
-    --bs-card-inner-border-radius: 0;
-}
-
-/*--- provide pleasing visual space at the bottom of each individual article ---*/
-.index_promo,
-.index_store {
-    padding-bottom: 20px;
-}
-
-/*--- Creates a consistent look between the 3rd party elements and card stylings set above ---*/
+/*--- Creates a consistent look between the 3rd party elements and card stylings set above*/
 .bc-container iframe,
 .spotify-container,
 .yt-container,
@@ -272,7 +264,7 @@ aside {
     border-color: black;
 }
 
-/*--- Removes additional whitespace which was visible after adding the above border to the box, used chrome dev tools to find the iframes size compared to the divs and changed the height accordingly ---*/
+/*--- Removes additional whitespace which was visible after adding the above border to the box, used chrome dev tools to find the iframes size compared to the divs and changed the height accordingly*/
 div .spotify-container {
     height: 268px;
 }
