@@ -27,8 +27,8 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <!-- Adds brand name & logo to the navbar -->
-                <a class="navbar-brand" href="index.html"> <img src="assets/images/stickers/Asset 8.png" alt="Logo" width="32"
-                        height="32" class="d-inline-block align-text-top icon">The Oversights</a>
+                <a class="navbar-brand" href="index.html"> <img src="assets/images/stickers/Asset 8.png" alt="Logo"
+                        width="32" height="32" class="d-inline-block align-text-top icon">The Oversights</a>
                 <!-- Collapsable burger menu & button icon -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
                     aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,8 +105,8 @@
             <h1>albums</h1>
             <br>
             <div class="row">
-                <div class="col-3">
-                    <img src="assets/images/merch/ha_cover.jpg" class="img-fluid" alt="Hello Adventure EP Cover">
+                <div class="col-md-3 d-sm-block">
+                    <img src="assets/images/stickers/Asset 1.png" class="img-fluid" alt="Hello Adventure EP Cover">
                     <aside>
                         <strong>Hello Adventure</strong><br>
                         The Oversights<br>
@@ -117,10 +117,10 @@
                     <img src="assets/images/stickers/Asset 6.png" class="img-fluid">
                     <hr>
                 </div>
-                <div class="col">
+                <div class="col d-sm-none d-md-block">
                     <div class="vl-right"></div>
                 </div>
-                <div class="col-4 ep-info">
+                <div class="col-md-4 col-sm-block ep-info">
                     <p>
                         The Debut EP <strong>"Hello Adventure"</strong> was first released in August, 2019.
                         <hr>
@@ -129,24 +129,28 @@
                         <br>
                     </p>
                     <!-- Bandcamp Embed iframe -->
-                    <iframe
-                        src="https://bandcamp.com/EmbeddedPlayer/album=1349594063/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/"
-                        width="100%" height="600" seamless><a
-                            href="https://theoversights.bandcamp.com/album/hello-adventure">Hello Adventure by The
-                            Oversights</a></iframe>
+                    <div class="bc-container">
+                        <iframe
+                            src="https://bandcamp.com/EmbeddedPlayer/album=1349594063/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+                            seamless><a href="https://theoversights.bandcamp.com/album/hello-adventure">Hello Adventure
+                                by The
+                                Oversights</a></iframe>
+                    </div>
                     <hr>
                     <!-- Spotify Embed iframe (already responsive)-->
-                    <iframe style="border: radius 0;"
-                        src="https://open.spotify.com/embed/artist/6boblV4KdwvbrysRgQHQW9?utm_source=generator"
-                        width="100%" height="260" frameBorder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"></iframe>
+                    <div class="spotify-container">
+                        <iframe style="border: radius 0;"
+                            src="https://open.spotify.com/embed/artist/6boblV4KdwvbrysRgQHQW9?utm_source=generator"
+                            width="100%" height="260" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
                     <hr class="hr_invisible">
                 </div>
-                <div class="col">
+                <div class="col d-sm-none d-md-block">
                     <div class="vl"></div>
                 </div>
-                <div class="col-3 ep-info">
+                <div class="col-md-3 col-sm-block ep-info">
                     <h3>Biography</h3>
                     <hr>
                     <p><strong>The Oversights</strong> <br>are an alternative rock band based in Newport, <br>South
