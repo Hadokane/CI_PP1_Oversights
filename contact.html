@@ -27,8 +27,8 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <!-- Adds brand name & logo to the navbar -->
-                <a class="navbar-brand" href="index.html"> <img src="assets/images/stickers/Asset 8.png" alt="Logo" width="32"
-                        height="32" class="d-inline-block align-text-top icon">The Oversights</a>
+                <a class="navbar-brand" href="index.html"> <img src="assets/images/stickers/Asset 8.png" alt="Logo"
+                        width="32" height="32" class="d-inline-block align-text-top icon">The Oversights</a>
                 <!-- Collapsable burger menu & button icon -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
                     aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,11 +110,47 @@
                 </div>
             </div>
             <hr>
-            <div class="col justify-content-center">
-                <img src="assets/images/stickers/Asset 7.png" class="img-fluid mx-auto d-block">
-            </div>
         </section>
         <!-- Contact form -->
+        <section class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- Form -->
+                    <form action="email_confirm.html" method="GET">
+                        <div class="form-row">
+                            <div class="input-group">
+                                <input class="contact-input" type="text" id="name" required>
+                                <label for="name" class="contact-label"><i class="fas fa-user"></i> Your
+                                    Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input class="contact-input" type="email" id="email" required>
+                                <label for="email" class="contact-label"><i class="fas fa-envelope"></i> Your
+                                    Email</label>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <input class="contact-input" type="text" id="subject" required>
+                            <label for="subject" class="contact-label"><i class="fa-solid fa-pen"></i>
+                                Subject</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="contact-textarea" id="message" rows="8" required></textarea>
+                            <label for="message" class="contact-label"><i class="fas fa-comments"></i> Your
+                                Message</label>
+                        </div>
+                        <button class="contact-btn" type="submit">SEND <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form> 
+                    <!-- End of Form -->
+                    <!-- Sticker img -->
+                    <div class="col justify-content-center">
+                        <img src="assets/images/stickers/Asset 7.png" class="img-fluid mx-auto d-block">
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- br for footer spacing -->
         <br>
