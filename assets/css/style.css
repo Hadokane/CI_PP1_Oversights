@@ -66,6 +66,21 @@ p {
     background-color: black;
 }
 
+/*--- Shows page - card styling */
+/*sets container size*/
+.shows_card .poster {
+    height: 80px;
+    width: 100%;
+}
+/*sets span style, fills container width*/
+.shows_card span {
+    color: antiquewhite;
+    background-color: black;
+    font-weight: 400;
+    text-transform: capitalize;
+    display: block;
+}
+
 /*----------------------------- hr Styling*/
 hr {
     border: none;
