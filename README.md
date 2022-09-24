@@ -1,4 +1,4 @@
-![OvsLogo](assets/images/stickers/Asset%201.png)
+![OvsLogo](assets/images/stickers/asset_1.png)
 
 # The Oversights - Band Website
 
@@ -150,7 +150,7 @@ The following user stories have been numbered sequentially so that they may be r
 
 For example: 
 
-    (Goal's achieved: 2, 6, 9)
+    (User stories met: 2, 6, 9)
 
 Would show that:
 
@@ -547,52 +547,148 @@ The following section will be examining how the completed website has met the de
 
 **Navigation Bar**
 
-![Colour Pallet](docs/screenshots/colour_choices.png)
+*Navigation - Monitor*
+![Navigation - Monitor](docs/screenshots/header_bg.png)
+
+*Navigation - Tablet*
+![Navigation - Tablet](docs/screenshots/header_sm.png)
+
+*Navigation - Mobile*
+![Navigation - Mobile](docs/screenshots/header_xs.png)
 
 The navigation bar is responsive to different screen size and present on all pages. It is made up of simple headers and is intuitive to all users.
 
 The currently active page has it's header left in black and doesn't respond to being hovered over to disuade user interaction. Contrastingly, the inactive pages respond by changing background and text colour to encourage user interaction.
 
-The navigation bar is responsive to all device sizes. On mobile devices the menu is condensed into a drop down menu, freeing up screen real estate and beind represented by a recognisable "hamburger" menu.
+The navigation bar is responsive to all device sizes. On mobile devices the menu is condensed into a drop-down menu, freeing up screen real estate and being represented by a recognisable "hamburger" menu. On smaller devices again the band's text logo disappears before overflowing off the side of the screen.
 
 The social icons appear in the "hamburger" menu on mobile devices to be readily available for user interaction.
 
-    User Stories met: 5, 14, 17
+    User Stories met: 5, 6, 14, 17.
 
 **Footer**
 
-![Colour Pallet](docs/screenshots/colour_choices.png)
+*Footer - Monitor*
+![Footer- Monitor](docs/screenshots/footer_bg.png)
 
-The footer is the only other element present on all pages. As such it is responsive. It contains links to restaurant's profile on the most popular social media, opening hours, contact details and copyrights.
-Links to social media are shown as icons, making it easy to find a platform that interests the user. The links open in a new browser tab, so the user stays on the restaurant's website.
+*Footer - Tablet/Phone*
+![Footer - Mobile](docs/screenshots/footer_sm.png)
 
-    User Stories met: 5, 14, 17
+The footer is the only other element present on all pages. As such it is responsive. At larger sizes, it contains links to the band's social platforms and on the right contains a link to the developer's GitHub profile.
+
+The social media icons displayed are all well known and use the official branded colours as their button background, ensuring the user has access to each platform and is visually drawn to the links. Each button opens the corresponding page in a new browser tab, keeping the user's session on the band's website undisturbed.
+
+As mentioned, the social icons disappear at smaller sizes, moving to a higher vantage point for the user. The GitHub logo doesn't show on phones as I felt those interested in the development process would likely have viewed it on a larger resolution screen such as a desktop. The promotion of my developer website is in no way a priority.
+
+    User Stories met: 1, 2, 6, 17.
 
 **Index Page**
 
-![Colour Pallet](docs/screenshots/colour_choices.png)
+*Index - Monitor (two-column)*
+![Index - Monitor](docs/screenshots/index_bg.png)
 
+*Footer - Phone (single-column)* 
+![Index - Mobile](docs/screenshots/index_sm_iframes2.png)
+
+*Footer - Phone (single-column)*
+![Index - Mobile2](docs/screenshots/index_sm_iframes.png)
+
+*Footer - Phone (single-column)*  **Hover Demonstration**
+![Index - Mobile3](docs/screenshots/index_sm_hover.png)
+
+The "Index" serves as the home page. The section includes a two-column layout, that responsively collapses into a single column at smaller resolutions. 
+
+It provides the user with immediate access to the latest music release and videos via iframes. These have been styled in CSS to make them responsive to the screen size and their containers. Each element is adorned with a provocative message, engaging the user and asking them to interact with the element. These elements also serve as a direct gateway into the band's social platforms.
+
+Below this section is the merchandise tab. The minimalistic layout of the page accentuates the vibrant background colour of these images, drawing the eyes of users, and encouraging clicks. Shopping cart icons are present to show users where to click and provide further visual context.
+
+The hover function is demonstrated here. Showing how the bold colours provide positive feedback to the user upon interaction.
+
+    User Stories met: 1, 2, 7, 8, 9, 12, 13, 15, 17.
 
 **Music Page**
 
-![Colour Pallet](docs/screenshots/colour_choices.png)
+*Music - Monitor (three-column)*
+![Music - Monitor](docs/screenshots/music_bg.png)
 
+*Music - Phone (single-column)* 
+![Music - Mobile](docs/screenshots/music_sm.png)
+
+*Music - Phone (single-column)* 
+![Music - Mobile2](docs/screenshots/music_sm2.png)
+
+The "Music" page catalogues the band's releases and provides information to the user. It has a strong culturally appropriate style for the band with large imagery present representing their current release. It responsively collapses into a single-column layout for smaller devices, hiding the vertical separation bars.
+
+Vertical separation is present across this three-column layout
+giving it a recognisable article/newspaper layout that a user would be comfortable seeing.
+
+Elements such as the iframes present on the first page are repeated here. As the band release more music, the home page will begin to cycle through and replace content to keep the most recent music and videos at the forefront. These pages will remain unaltered, however, serving as a time capsule for each release.
+
+    User Stories met: 1, 3, 8, 12, 13, 17.
 
 **Shows Page**
 
-![Colour Pallet](docs/screenshots/colour_choices.png)
+*Shows - Monitor (single-column)*
+![Shows - Monitor](docs/screenshots/shows_bg.png)
 
+*Shows - Monitor (single-column)* **No Alerts**
+![Shows - Monitor2](docs/screenshots/shows_bg_no_alerts.png)
+
+*Shows - Phone (single-column)* 
+![Shows - Mobile](docs/screenshots/shows_sm.png)
+
+*Shows - Monitor (single-column)* **No Alerts**
+![Shows - Mobile2](docs/screenshots/shows_sm_no_alerts.png)
+
+*Shows - Modal (full-screen)*
+![Shows - Modal](docs/screenshots/shows_modal.png)
+
+"Shows" purpose is to catalogue the events the band plays and serve as a gallery.
+
+It features two Alert messages to improve the page's clarity to the user. These can be hidden by pressing the "X" button on the right-hand side to collapse the page into a more visually pleasing view that makes use of content hinting, exposing the tops of the gallery cards.
+
+Modals are wrapped inside of cards to provide a sleek, simple method of interactivity for the user. The cards keep the page clutter-free and allow strong, cropped hero images to draw the attention of the user, they want to click and see the full image. The full-screen modal then opens up, keeping the user on the current page (and being closable via an "X" button) allowing them to scroll through a varied-size image gallery at adaptive resolutions.
+
+    User Stories met: 3, 4, 10, 12, 18.
 
 **Contact Page**
 
-![Colour Pallet](docs/screenshots/colour_choices.png)
+*Contact - Monitor (single-column)* 
+![Contact - Monitor](docs/screenshots/contact_bg.png)
 
+*Contact- Phone (single-column)* 
+![Contact- Mobile](docs/screenshots/contact_sm.png)
+
+The "Contact" page provides a functional contact form for Event Managers to contact the band. Creating a more personal means of communication than going through a social channel like Facebook.
+
+This form is designed to be simple and foolproof for the user. Icons and input examples are present to give the user comprehensive assistance in filling in the form.
+
+The built-in CAPTCHA function has been disabled, allowing for a quicker, seamless means of interaction for the user.
+
+Required tags are attached to each user input, helping to ensure they don't accidentally send the form in an incomplete state.
+The band will then have all the necessary information to send an informed reply.
+
+Once the form is submitted the user will be taken to the "Thanks" page.
+
+    User Stories met: 11, 16.
 
 **Thanks Page**
 
-![Colour Pallet](docs/screenshots/colour_choices.png)
+*Thanks - Monitor (single-column)* 
+![Thanks - Monitor](docs/screenshots/thanks_bg.png)
 
+*Thanks - Phone (single-column)* 
+![Thanks - Mobile](docs/screenshots/thanks_sm.png)
 
+The thanks page is kept simple. Its sole purpose is to provide a positive user experience by giving them immediate feedback that their form has been sent to the band.
+
+It features a bold "THANK YOU" header, a confirming paragraph stating "We have received your email" and bright branded imagery to convey a feeling of relief and confirmation to the form sender.
+
+    User Stories met: 11, 16.
+
+**Analysis Complete**
+
+With the above assessment complete, I have confirmed that each predefined user story has been met satisfactorily by the features offered.
 
 [Back to top ↑](#the-oversights---band-website)
 
@@ -710,12 +806,21 @@ seemed to remove my icon as well leaving the bart with no branding and moving th
             }
         }
 
+**Remaining Bugs**
+
+The webform submit button if spam clicked after disabling the CAPTCHA will send the same message multiple times. Gmail collapses these multiple messages into a single alert meaning it's not a big deal.
+
 [Back to top ↑](#the-oversights---band-website)
 
 ---
-## Credits (Programmes / Frameworks / Technologies Used)
+## Credits 
 ---
 
+### Programmes Used
+
+### Frameworks Used
+
+### Technologies Used
 1. [CI TEMPLATE](https://github.com/Code-Institute-Org/gitpod-full-template) - This repository was initially created using Code Institute's provided template.
 
 2. [Gut42](https://gut42.com/the-oversights-hello-adventure) - For his stellar, commissioned design work on The Oversights album, logos and stickers. Used with permission throughout this website to establish a strong, branded theme.
