@@ -98,129 +98,127 @@
         <!--Page Break added for stylistic purposes and to preserve the visibility of the drop shadow effect from the nav -->
         <hr>
     </header>
-
-    <body>
-        <!-- Section 1 container -->
-        <section class="container">
-            <div class="row">
-                <!-- Column -->
-                <div class="col">
-                    <h2>Contact</h2>
-                    <p>Get in touch with us</p>
-                </div>
-            </div>
-            <hr>
-        </section>
-        <!-- Contact form -->
-        <div class="container">
-            <!-- Formsubmit used to send email to bands account. Random # string used in place of email after activation. -->
-            <form class="row g-3" action="https://formsubmit.co/cdee12d949959d7fe88ee141fce2407a" method="POST">
-                <!-- Honeypot (catch spammers without a CAPTCHA) -->
-                <input type="text" name="_honey" style="display:none">
-                <!-- Disable reCAPTCHA, improve ease of form submission for users -->
-                <input type="hidden" name="_captcha" value="false">
-                <!-- Name Field -->
-                <div class="col-md-6">
-                    <label for="name" class="form-label"><i class="fa-solid fa-user"></i> Name</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required>
-                </div>
-                <!-- Email Field -->
-                <div class="col-md-6">
-                    <label for="emailInfo" class="form-label"><i class="fa-solid fa-envelope"></i> Email</label>
-                    <input type="email" name="email" class="form-control" id-="emailInfo"
-                        placeholder="john.doe@example.com" required>
-                </div>
-                <!-- Name Field -->
-                <div class="col-md-6">
-                    <label for="subject" class="form-label"><i class="fa-solid fa-pen"></i> Subject</label>
-                    <input type="text" name="_subject" class="form-control" id="name" placeholder="Great opportunity"
-                        required>
-                </div>
-                <!-- Text Field -->
-                <div class="col-md-12">
-                    <label for="info" class="form-label"><i class="fa-solid fa-comment-dots"></i> Comments</label>
-                    <textarea class="form-control" name="comment" id="info" rows="4"
-                        placeholder="We'd love for you to play at..." required></textarea>
-                </div>
-                <!-- Button -->
-                <div class="col-md-12 d-flex justify-content-center">
-                    <button type="submit" class="btn btn-dark">Send</button>
-                </div>
-                <!-- Links to confirmation page on successful send / place deployed URL here -->
-                <input type="hidden" name="_next" value="https://hadokane.github.io/CI_PP1_Oversights/thanks.html">
-            </form>
-            <hr>
-            <!-- Sticker img -->
-            <div class="col justify-content-center">
-                <img src="assets/images/stickers/asset_7.png" class="img-fluid mx-auto d-block">
+    <!-- Section 1 container -->
+    <section class="container">
+        <div class="row">
+            <!-- Column -->
+            <div class="col">
+                <h2>Contact</h2>
+                <p>Get in touch with us</p>
             </div>
         </div>
-        <!-- br for footer spacing -->
-        <br>
-        <!-- hr used stylistically to separate the sections, padding removed for footer to sit flush -->
-        <hr class="footer_hr">
-        <!-- Footer -->
-        <footer class="bg-light">
-            <!-- Grid container -->
-            <section class="container">
-                <!-- Section: Social Links -->
-                <div class="row">
-                    <!-- Left-hand column (Appears in drop down nav bar when on sm/md devices to improve visibility)-->
-                    <div class="col p-3 d-none d-lg-block">
-                        <!-- Aligns Left -->
-                        <div class="d-flex justify-content-start ">
-                            <!-- Bandcamp -->
-                            <a class="btn btn-secondary btn-floating m-1" href="https://theoversights.bandcamp.com/"
-                                role="button" style="background-color: #629aa9" target="_blank"><i
-                                    class="fab fa-bandcamp"></i></a>
-                            <!-- Facebook -->
-                            <a class="btn btn-primary btn-floating m-1" href="https://www.facebook.com/theoversights"
-                                role="button" style="background-color: #4267B2" target="_blank"><i
-                                    class="fab fa-facebook"></i></a>
-                            <!-- Instagram -->
-                            <a class="btn btn-dark btn-floating m-1" href="https://www.instagram.com/theoversights/"
-                                role="button" style="background-color: #C13584" target="_blank"><i
-                                    class="fab fa-instagram"></i></a>
-                            <!-- Spotify -->
-                            <a class="btn btn-dark btn-floating m-1"
-                                href="https://open.spotify.com/artist/6boblV4KdwvbrysRgQHQW9" role="button"
-                                style="background-color: #1DB954" target="_blank"><i class="fab fa-spotify"></i></a>
-                            <!-- Twitter -->
-                            <a class="btn btn-dark btn-floating m-1" href="https://twitter.com/the_oversights"
-                                role="button" style="background-color: #1DA1F2" target="_blank"><i
-                                    class="fab fa-twitter"></i></a>
-                            <!-- Youtube -->
-                            <a class="btn btn-dark btn-floating m-1"
-                                href="https://www.youtube.com/channel/UCj2mb077pmcwlliiDsdSkyg" role="button"
-                                style="background-color: #FF0000" target="_blank"><i class="fab fa-youtube"></i></a>
-                        </div>
+        <hr>
+    </section>
+    <!-- Contact form -->
+    <div class="container">
+        <!-- Formsubmit used to send email to bands account. Random # string used in place of email after activation. -->
+        <form class="row g-3" action="https://formsubmit.co/cdee12d949959d7fe88ee141fce2407a" method="POST">
+            <!-- Honeypot (catch spammers without a CAPTCHA) -->
+            <input type="text" name="_honey" style="display:none">
+            <!-- Disable reCAPTCHA, improve ease of form submission for users -->
+            <input type="hidden" name="_captcha" value="false">
+            <!-- Name Field -->
+            <div class="col-md-6">
+                <label for="name" class="form-label"><i class="fa-solid fa-user"></i> Name</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required>
+            </div>
+            <!-- Email Field -->
+            <div class="col-md-6">
+                <label for="emailInfo" class="form-label"><i class="fa-solid fa-envelope"></i> Email</label>
+                <input type="email" name="email" class="form-control" id-="emailInfo" placeholder="john.doe@example.com"
+                    required>
+            </div>
+            <!-- Name Field -->
+            <div class="col-md-6">
+                <label for="subject" class="form-label"><i class="fa-solid fa-pen"></i> Subject</label>
+                <input type="text" name="_subject" class="form-control" id="name" placeholder="Great opportunity"
+                    required>
+            </div>
+            <!-- Text Field -->
+            <div class="col-md-12">
+                <label for="info" class="form-label"><i class="fa-solid fa-comment-dots"></i> Comments</label>
+                <textarea class="form-control" name="comment" id="info" rows="4"
+                    placeholder="We'd love for you to play at..." required></textarea>
+            </div>
+            <!-- Button -->
+            <div class="col-md-12 d-flex justify-content-center">
+                <button type="submit" class="btn btn-dark">Send</button>
+            </div>
+            <!-- Links to confirmation page on successful send / place deployed URL here -->
+            <input type="hidden" name="_next" value="https://hadokane.github.io/CI_PP1_Oversights/thanks.html">
+        </form>
+        <hr>
+        <!-- Sticker img -->
+        <div class="col justify-content-center">
+            <img src="assets/images/stickers/asset_7.png" class="img-fluid mx-auto d-block">
+        </div>
+    </div>
+    <!-- br for footer spacing -->
+    <br>
+    <!-- hr used stylistically to separate the sections, padding removed for footer to sit flush -->
+    <hr class="footer_hr">
+    <!-- Footer -->
+    <footer class="bg-light">
+        <!-- Grid container -->
+        <div class="container">
+            <!-- Section: Social Links -->
+            <div class="row">
+                <!-- Left-hand column (Appears in drop down nav bar when on sm/md devices to improve visibility)-->
+                <div class="col p-3 d-none d-lg-block">
+                    <!-- Aligns Left -->
+                    <div class="d-flex justify-content-start ">
+                        <!-- Bandcamp -->
+                        <a class="btn btn-secondary btn-floating m-1" href="https://theoversights.bandcamp.com/"
+                            role="button" style="background-color: #629aa9" target="_blank"><i
+                                class="fab fa-bandcamp"></i></a>
+                        <!-- Facebook -->
+                        <a class="btn btn-primary btn-floating m-1" href="https://www.facebook.com/theoversights"
+                            role="button" style="background-color: #4267B2" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <!-- Instagram -->
+                        <a class="btn btn-dark btn-floating m-1" href="https://www.instagram.com/theoversights/"
+                            role="button" style="background-color: #C13584" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <!-- Spotify -->
+                        <a class="btn btn-dark btn-floating m-1"
+                            href="https://open.spotify.com/artist/6boblV4KdwvbrysRgQHQW9" role="button"
+                            style="background-color: #1DB954" target="_blank"><i class="fab fa-spotify"></i></a>
+                        <!-- Twitter -->
+                        <a class="btn btn-dark btn-floating m-1" href="https://twitter.com/the_oversights" role="button"
+                            style="background-color: #1DA1F2" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <!-- Youtube -->
+                        <a class="btn btn-dark btn-floating m-1"
+                            href="https://www.youtube.com/channel/UCj2mb077pmcwlliiDsdSkyg" role="button"
+                            style="background-color: #FF0000" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
-                    <!-- Center column -->
-                    <div class="col p-3">
-                        <!-- Aligns center -->
-                        <div class="d-flex justify-content-center">
-                            <!-- Back to top of screen button -->
-                            <a class="btn btn-dark btn-floating m-1" href="#top" role="button">
-                                <i class="fa-solid fa-angles-up"></i></a>
-                        </div>
+                </div>
+                <!-- Center column -->
+                <div class="col p-3">
+                    <!-- Aligns center -->
+                    <div class="d-flex justify-content-center">
+                        <!-- Back to top of screen button -->
+                        <a class="btn btn-dark btn-floating m-1" href="#top" role="button">
+                            <i class="fa-solid fa-angles-up"></i></a>
                     </div>
-                    <!-- Right-hand column (Only appears on lg devices, people aren't coding on phones/tablets so no reason to show Gitlink) -->
-                    <div class="col p-3 d-none d-lg-block">
-                        <!-- Aligns right -->
-                        <div class="d-flex justify-content-end">
-                            <!-- Github Link -->
-                            <a class="btn btn-dark btn-floating m-1" href="https://github.com/Hadokane" role="button"
-                                style="background-color: #333" target="_blank">
-                                <i class="fab fa-github"></i></a>
-                        </div>
+                </div>
+                <!-- Right-hand column (Only appears on lg devices, people aren't coding on phones/tablets so no reason to show Gitlink) -->
+                <div class="col p-3 d-none d-lg-block">
+                    <!-- Aligns right -->
+                    <div class="d-flex justify-content-end">
+                        <!-- Github Link -->
+                        <a class="btn btn-dark btn-floating m-1" href="https://github.com/Hadokane" role="button"
+                            style="background-color: #333" target="_blank">
+                            <i class="fab fa-github"></i></a>
                     </div>
-            </section>
-            <p>© 2022 The Oversights</p>
-        </footer>
-        <!-- Bootstrap Javascript dependencies -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
-        </script>
-    </body>
+                </div>
+            </div>
+        </div>
+        <p>© 2022 The Oversights</p>
+    </footer>
+    <!-- Bootstrap Javascript dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+</body>
 
 </html>
