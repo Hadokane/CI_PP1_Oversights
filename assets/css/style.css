@@ -296,3 +296,10 @@ aside {
 div .spotify-container {
     height: 268px;
 }
+
+/*--- Sizing the spotify container in CSS rather than inline HTML*/
+div .spotify-container iframe {
+    height: 260px;
+    width: 100%;
+    border: 0;
+}
