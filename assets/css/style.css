@@ -12,11 +12,11 @@ p,
 }
 
 /*----------------------------- Text Styling*/
-/*--- Headings (h5 used for cards)*/
+/*--- Headings (.card h3 used for merchandise cards)*/
 h1,
 h2,
 h3,
-.card h5,
+.card h3,
 p {
     color: black;
     font-family: 'Karla', sans-serif;
@@ -25,11 +25,18 @@ p {
     text-align: center;
 }
 
+/*--- Styled smaller to better fit the cards but called h3 to better comply with assistive technology*/
+.card h3 {
+    font-size: 1.25em;
+}
+
 /*--- Vertical space given under headings, aligned & styled*/
 h1,
 h2 {
     padding-bottom: 10px;
     text-transform: uppercase;
+    /*--- Sized to be the same due to some pages having multiple "would-be-h1" headings when in a two-column view such as the index.*/
+    font-size: 1.75em;
 }
 
 /*--- provide pleasing visual space at the bottom of each individual article ---*/
@@ -47,7 +54,7 @@ p {
 }
 
 /*--- Paragraph styling for Music page only. Removes background. Resemble a news article in style.*/
-.ep-info p {
+.ep_info p {
     color: black;
     background-color: transparent;
 }
@@ -59,7 +66,7 @@ p {
 }
 
 /*--- Hover class used to improve user experience. Interactivity.*/
-.card h5:hover {
+.card h3:hover {
     color: yellow;
     border: 3px solid yellow;
     padding: 5px;
@@ -72,6 +79,7 @@ p {
     height: 80px;
     width: 100%;
 }
+
 /*sets span style, fills container width*/
 .shows_card span {
     color: antiquewhite;
@@ -155,7 +163,7 @@ aside {
 
 /*--- Prevents the Brand text from pushing the navbar to the line below. Disappears before hand, leaving the logo visible*/
 @media screen and (max-width: 450px) {
-    .navbar-brand{
+    .navbar-brand {
         width: 0;
         font-size: 0;
     }
