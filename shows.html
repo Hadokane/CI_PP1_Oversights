@@ -130,16 +130,28 @@
                     <div class="carousel-inner">
                         <!-- Images in gallery -->
                         <div class="carousel-item active">
-                            <img src="assets/images/live_gallery/header/img_1.jpg" class="d-block w-100"
-                                alt="Funny cleaner with an intense look">
+                            <picture>
+                                <source srcset="assets/images/live_gallery/webp_format/header/img_1.webp"
+                                    type="image/webp">
+                                <img src="assets/images/live_gallery/header/img_1.jpg" class="d-block w-100"
+                                    alt="Funny cleaner with an intense look">
+                            </picture>
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/images/live_gallery/header/img_2.jpg" class="d-block w-100"
-                                alt="Businessman swims with sharks">
+                            <picture>
+                                <source srcset="assets/images/live_gallery/webp_format/header/img_2.webp"
+                                    type="image/webp">
+                                <img src="assets/images/live_gallery/header/img_2.jpg" class="d-block w-100"
+                                    alt="Businessman swims with sharks">
+                            </picture>
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/images/live_gallery/header/img_3.jpg" class="d-block w-100"
-                                alt="The band plays in a padded room">
+                            <picture>
+                                <source srcset="assets/images/live_gallery/webp_format/header/img_3.webp"
+                                    type="image/webp">
+                                <img src="assets/images/live_gallery/header/img_3.jpg" class="d-block w-100"
+                                    alt="The band plays in a padded room">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -173,9 +185,9 @@
                         <div class="card shows_card">
                             <!-- Trigger for modal / card-img-top limits height of class -->
                             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#gallery_1">
-                                <span>Le Pub - 17/02/19</span> <img class="poster"
-                                    src="assets/images/live_gallery/le_pub/poster_1.jpg" style="object-fit: cover;"
-                                    alt="Cover image for the Le Pub gallery">
+                                <span>Le Pub - 17/02/19</span>
+                                <img class="poster" src="assets/images/live_gallery/le_pub/poster_1.jpg"
+                                    style="object-fit: cover;" alt="Cover image for the Le Pub gallery">
                             </button>
                             <!-- Modal Contents -->
                             <div class="modal fade" id="gallery_1" tabindex="-1" aria-hidden="true">
@@ -357,7 +369,8 @@
                     <div class="d-flex justify-content-center">
                         <!-- Back to top of screen button -->
                         <a class="btn btn-dark btn-floating m-1" href="#top" role="button">
-                            <i class="fa-solid fa-angles-up"></i><span class="visually-hidden">Back to the top of page button</span></a>
+                            <i class="fa-solid fa-angles-up"></i><span class="visually-hidden">Back to the top of page
+                                button</span></a>
                     </div>
                 </div>
                 <!-- Right-hand column (Only appears on lg devices, people aren't coding on phones/tablets so no reason to show Gitlink) -->
