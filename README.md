@@ -62,12 +62,16 @@ It has been tested on a variety of devices and screen resolutions, from mobiles 
         - [Wireframes](#wireframes)
     - [Surface Plane](#surface-plane)
 2. [Features](#features)
-3. [Technologies Used](#technologies-used)
+3. [Validation Tests](#validation-tests)
+    - [HTML Validation](#html-validation)
+    - [CSS Validation](#css-validation)
+4. [Testing](#testing)
+    - [Screen Reader Accessibility](#screen-reader-accessibility)
+    - [Performance Testing](#performance-testing)
+    - [Device Testing](#device-testing)
+4. [Technologies Used](#technologies-used)
     - [Languages](#languages)
     - [Frameworks & Tools](#frameworks-&-tools)
-4. [Validation](#validation)
-    - [HTML Validation](#HTML-validation)
-    - [CSS Validation](#CSS-validation)
 5. [Testing](#testing)
     - [Accessibility](#accessibility)
     - [Performance](#performance)
@@ -450,6 +454,12 @@ Ensuring users can access them with minimal effort, removing the need to scroll 
 
 Iframes will be made responsive using CSS to meet user expectations and fit comfortably on all screen sizes.
 
+The navigation bar also houses two additional pages that link to external websites:
+- Video which links to Youtube.
+- Store which links to the Bandcamp Merchandise page.
+
+This is to encourage the user to follow the band on these platforms. Further promoting the band's social media and providing interaction opportunities for the user.
+
 **Visual Separation**
 
 Visual separation is achieved between sections of the website through the use of <"HR"> tags to create dividing lines. This simple visual, intuitively tells the user when one section ends and another begins.
@@ -693,20 +703,202 @@ With the above assessment complete, I have confirmed that each predefined user s
 [Back to top ↑](#the-oversights---band-website)
 
 ---
+## Validation Tests
+---
+
+### HTML Validation
+
+I carried out validation for this project by running each page individually through "[W3C's Validation Service](https://validator.w3.org/)".
+
+**Initial validation**
+
+<details><summary>Index</summary>
+<img src="docs/validation/val_index.png" alt="Index Validation">
+</details>
+
+<details><summary>Music</summary>
+<img src="docs/validation/val_music.png" alt="Music Validation">
+</details>
+
+<details><summary>Shows</summary>
+<img src="docs/validation/val_shows.png" alt="Shows Validation">
+</details>
+
+<details><summary>Contact</summary>
+<img src="docs/validation/val_contact.png" alt="Contact Validation">
+</details>
+
+<details><summary>Thanks</summary>
+<img src="docs/validation/val_thanks.png" alt="Thanks Validation">
+</details>
+
+The errors found can be summarised as follows:
+- There was an issue with a missing closing tag in the footer, affecting all pages.
+- The body tag had been duplicated on a few of the pages.
+- The Bandcamp, Spotify and Youtube iframes all made use of inline styling that W3C deemed a failure.
+- Some images were missing "alt" tags.
+- There was a naming convention error with the sticker images, where I'd forgotten to remove a space from the file names.
+
+
+**Validation Passes**
+
+I fixed the above issues and ran the pages back through W3C's validation services. 
+
+<details><summary>Index Pass</summary>
+<img src="docs/validation/val_index_pass.png" alt="Index Validation Pass">
+</details>
+
+<details><summary>Music Pass</summary>
+<img src="docs/validation/val_music_pass.png" alt="Music Validation Pass">
+</details>
+
+<details><summary>Contact Pass</summary>
+<img src="docs/validation/val_contact_pass.png" alt="Contact Validation Pass">
+</details>
+
+<details><summary>Shows Pass</summary>
+<img src="docs/validation/val_shows_pass.png" alt="Shows Validation Pass">
+</details>
+
+<details><summary>Thanks Pass</summary>
+<img src="docs/validation/val_thanks_pass.png" alt="Thanks Validation Pass">
+</details>
+
+
+### CSS Validation
+
+I then carried out validation on the projects CSS file by running the page individually through "[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)".
+
+<details><summary>CSS Pass</summary>
+<img src="docs/validation/val_css.png" alt="CSS Validation Pass"></details>
+
+The results came back favourably, allowing me to move on to further testing of my project.
+
+[Back to top ↑](#the-oversights---band-website)
+
+---
 ## Testing
 ---
 
-**Validation Tests**
+### Screen Reader Accessibility
 
-Info goes here.
+To test the accessibility offered by my code I ran it through [WAVE's Accessibility Evaluator](https://wave.webaim.org/)
 
-**Screen Reader**
+**Initial Test**
 
-Info goes here.
+<details><summary>Wave Test</summary>
+<img src="docs/validation/wave_test.png" alt="Wave Testing"></details>
 
-**Different browsers & devices**
+Issues Found:
+- Heading levels skipped and H1's not used on pages. Could confuse those using assistive technology such as keyboard navigation.
+    - Will address this by introducing a correct heading hierarchy across my website.
+- "Home" tab is marked redundant as the website's logo has the same function.
+    - The "Home" tab is clear for the user to use and the added functionality being present on the logo provides a larger surface area for users to interact with. 
+    - The logo also takes over the function of the home button on smaller screen sizes without the user having to access the "hamburger" menu. Setting it to only function at this size would confuse users and dampen their experience.
+    - As such I will keep both to ensure a convenient user experience.
+- Alerts about Youtube videos, mentioning it's wise to ensure videos have synchronised captioning available.
+    - Youtube does provide captioning for these videos. I can manually add to this if deemed necessary in a future update.
+- Mentions how the merchandise tab features a redundant link. Same link for "Hello Adventure: Digital Download" & "Hello Adventure: Physical Edition"
+    - This will be left in as it's just the nature of the external website hosting the Physical and Digital editions on the same page. It's more convenient for the user this way. I could rearrange the merchandise icons to avoid this issue but feel it makes more sense to keep these together as they are two purchase options for the same media.
+- Social link buttons in the footer and collapsed header missing screen reader labels.
+    - Fixed using:
+    ```
+    <span class="visually-hidden">Descriptive invisible text here</span>
+    ```
+- Also added an aria-hidden="true" label to Formsubmit's Honey Pot code to solve an error.
 
-Info goes here.
+**Validation Passed**
+
+<details><summary>Wave Test Passed</summary>
+<img src="docs/validation/wave_test_pass.png" alt="Wave Testing Passed"></details>
+
+After fixing the above errors my website passed with no errors.
+
+There were however four contrast errors flagged:
+
+<details><summary>Bandcamp Contrast</summary>
+<img src="docs/validation/wave_bc_fail.png" alt="Wave Bandcamp Contrast"></details>
+
+<details><summary>Spotify Contrast</summary>
+<img src="docs/validation/wave_sp_fail.png" alt="Wave Spotify Contrast"></details>
+
+<details><summary>Twitter Contrast</summary>
+<img src="docs/validation/wave_tw_fail.png" alt="Wave Twitter Contrast"></details>
+
+<details><summary>Youtube Contrast</summary>
+<img src="docs/validation/wave_yt_fail.png" alt="Wave Youtube Contrast"></details>
+
+All of these were due to social media buttons in the footer.
+
+A quick fix for this would be to remove the custom styling for each button and use a default bootstrap dark theme.
+
+I've decided against this however, as in this instance each icon is using its correct brand colours. These brands are some of the most well-known and visited websites in the world and are recognisable instantly to many from their unique brand colours alone. In this case, I feel it's more beneficial for the user to have instant brand recognition and understanding of each icon over perfect contrast.
+
+### Performance Testing
+
+Google Lighthouse (in Chrome Developer Tools) allows me to test the individual performance of each page, on both mobile and desktop devices.
+
+Testing convinced me to include "picture" tags on the Shows page, allowing browsers to first display the images in .webp format, having the more supported but resource-hungry .png to fall back on.
+
+Below is a list of screenshots confirming the results:
+
+**Desktop**
+
+<details><summary>Lighthouse Index Results</summary>
+<img src="docs/validation/lighthouse_index.png" alt="Lighthouse Index Results"></details>
+
+<details><summary>Lighthouse Music Results</summary>
+<img src="docs/validation/lighthouse_music.png" alt="Lighthouse Music Results"></details>
+
+<details><summary>Lighthouse Shows Results</summary>
+<img src="docs/validation/lighthouse_shows.png" alt="Lighthouse Shows Results"></details>
+
+<details><summary>Lighthouse Contact Results</summary>
+<img src="docs/validation/lighthouse_contact.png" alt="Lighthouse Contact Results"></details>
+
+<details><summary>Lighthouse Thanks Results</summary>
+<img src="docs/validation/lighthouse_thanks.png" alt="Lighthouse Thanks Results"></details>
+
+**Mobile**
+
+<details><summary>Lighthouse Index Mobile Results</summary>
+<img src="docs/validation/lighthouse_index_mb.png" alt="Lighthouse Index Mobile Results"></details>
+
+<details><summary>Lighthouse Music Mobile Results</summary>
+<img src="docs/validation/lighthouse_music_mb.png" alt="Lighthouse Music Mobile Results"></details>
+
+<details><summary>Lighthouse Shows Mobile Results</summary>
+<img src="docs/validation/lighthouse_shows_mb.png" alt="Lighthouse Shows Mobile Results"></details>
+
+<details><summary>Lighthouse Contact Mobile Results</summary>
+<img src="docs/validation/lighthouse_contact_mb.png" alt="Lighthouse Contact Mobile Results"></details>
+
+<details><summary>Lighthouse Thanks Mobile Results</summary>
+<img src="docs/validation/lighthouse_thanks_mb.png" alt="Lighthouse Thanks Mobile Results"></details>
+
+### Device Testing
+
+The website was tested and functioned as expected on the following devices:
+
+- Novatech LTD. AMD Ryzen 7 3800x, 32GB Desktop
+- Lenovo IdeaPad 5 Pro
+- Samsung Galaxy S20 & S21
+- Samsung Galaxy Tab S7
+- MacBook Air with M1 chip
+- Iphone 11
+- Samsung Chrome Book
+
+The website has been tested on up-to-date versions of the following browsers:
+
+Microsoft Edge
+Google Chrome
+Chrome for android
+Mozilla Firefox
+Opera
+Safari
+Internet Explorer
+
+The website has also been tested on monitors of 16:9, 16:10 and 21:9 resolutions.
 
 [Back to top ↑](#the-oversights---band-website)
 
