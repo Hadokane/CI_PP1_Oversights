@@ -62,22 +62,14 @@ It has been tested on a variety of devices and screen resolutions, from mobiles 
         - [Wireframes](#wireframes)
     - [Surface Plane](#surface-plane)
 2. [Features](#features)
-3. [Validation Tests](#validation-tests)
+3. [Validation Tests](#validation_tests)
     - [HTML Validation](#html-validation)
     - [CSS Validation](#css-validation)
 4. [Testing](#testing)
     - [Screen Reader Accessibility](#screen-reader-accessibility)
     - [Performance Testing](#performance-testing)
     - [Device Testing](#device-testing)
-4. [Technologies Used](#technologies-used)
-    - [Languages](#languages)
-    - [Frameworks & Tools](#frameworks-&-tools)
-5. [Testing](#testing)
-    - [Accessibility](#accessibility)
-    - [Performance](#performance)
-    - [Device testing](#performing-tests-on-various-devices)
-    - [Browser compatibility](#browser-compatability)
-6. [Bugs](#Bugs)
+5. [Bugs](#bugs)
 7. [Deployment](#deployment)
 8. [Credits](#credits)
     - [Acknowledgements](#acknowledgements)
@@ -1030,6 +1022,30 @@ Therefore the CAPTCHA has been left disabled for the time being to facilitate mo
 [Back to top ↑](#the-oversights---band-website)
 
 ---
+## Deployment
+---
+
+The website was deployed on GitHub through the following steps:
+
+1. Login into GitHub and navigate to this repository - [CI_PP1_Ninja_Ramen](https://github.com/Hadokane/CI_PP1_Oversights)
+2. Head to the "Settings" tab on the navigation menu and select it.
+3. On the left sidebar select "Pages".
+4. Under "Build and deployment" you will see a heading names "Source". Click on the dropdown menu and select: "Branch: main" leaving the file as "/(root)"
+5. Click the save button.
+6. A URL will appear in your newly deployed repository.
+7.  GitHub will process your request and the bar's colour will change from blue to green on a page refresh, indicating that the page has been deployed.
+8. The website is now live and deployed at the following URL: https://hadokane.github.io/CI_PP1_Oversights/
+
+![CI_PP1_Ninja_Ramen](docs/screenshots/git_deploy.png)
+
+**Forking**
+1. Login into GitHub and navigate to this repository - [CI_PP1_Ninja_Ramen](https://github.com/Hadokane/CI_PP1_Oversights)
+2. Select the "Fork" tab on the navigation menu.
+3. Choose a destination to save your newly forked repository.
+
+[Back to top ↑](#the-oversights---band-website)
+
+---
 ## Credits 
 ---
 
@@ -1081,30 +1097,6 @@ Therefore the CAPTCHA has been left disabled for the time being to facilitate mo
 14. [Balsamiq](https://balsamiq.com/) (create wireframes for the project)
 
 15. [GitHub](https://github.com/) - For serving as my IDE and allowing me to create and deploy my repository.
-
-[Back to top ↑](#the-oversights---band-website)
-
----
-## Deployment
----
-
-The website was deployed on GitHub through the following steps:
-
-1. Login into GitHub and navigate to this repository - [CI_PP1_Ninja_Ramen](https://github.com/Hadokane/CI_PP1_Oversights)
-2. Head to the "Settings" tab on the navigation menu and select it.
-3. On the left sidebar select "Pages".
-4. Under "Build and deployment" you will see a heading names "Source". Click on the dropdown menu and select: "Branch: main" leaving the file as "/(root)"
-5. Click the save button.
-6. A URL will appear in your newly deployed repository.
-7.  GitHub will process your request and the bar's colour will change from blue to green on a page refresh, indicating that the page has been deployed.
-8. The website is now live and deployed at the following URL: https://hadokane.github.io/CI_PP1_Oversights/
-
-![CI_PP1_Ninja_Ramen](docs/screenshots/git_deploy.png)
-
-**Forking**
-1. Login into GitHub and navigate to this repository - [CI_PP1_Ninja_Ramen](https://github.com/Hadokane/CI_PP1_Oversights)
-2. Select the "Fork" tab on the navigation menu.
-3. Choose a destination to save your newly forked repository.
 
 [Back to top ↑](#the-oversights---band-website)
 
