@@ -144,6 +144,18 @@ aside {
     padding-left: 10px;
 }
 
+/*----------------------------- Sticker Styling*/
+/*--- Single-column sizing*/
+.sticker {
+    width: 22%;
+    height: auto;
+}
+/*--- Triple-column sizing*/
+.sticker_small {
+    width: 66%;
+    height: auto;
+}
+
 /*----------------------------- Navbar*/
 /*--- Center align text and add a backgroud color to the menu*/
 .navbar-container {
