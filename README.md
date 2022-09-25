@@ -137,13 +137,13 @@ After carrying out the above research, I have assembled the following "grid of o
 
 *GRID OF OPPORTUNITIES:*
 
-| Opportunity | IMPORTANCE  | VIABILITY   |
-| ----------- | ----------- | ----------- |
-| Promote Content | 5 | 5 |
-| Promote Merchandise | 4 | 3 |
-| Gain Social Media Followers | 4  | 5 |
-| Provide Musical Information | 2 | 4 |
-| Provide a functioning contact form | 4 | 2 |
+| Opportunity                        | IMPORTANCE | VIABILITY |
+|------------------------------------|------------|-----------|
+| Promote Content                    | 5          | 5         |
+| Promote Merchandise                | 4          | 3         |
+| Gain Social Media Followers        | 4          | 5         |
+| Provide Musical Information        | 2          | 4         |
+| Provide a functioning contact form | 4          | 2         |
 
 [Back to top ↑](#the-oversights---band-website)
 
@@ -370,7 +370,7 @@ It will be kept clean and simple throughout, remaining clutter-free and featurin
 It will also provide immediate interaction for the user, whether first time or recurring.
 
 It will allow immediate interaction for the user. 
-- Iframes which provide interaction opportunities with external music and videos.
+- Iframes provide interaction opportunities with external music and videos.
 - Icons provide contextual imagery for the user. Enhancing the experience by providing visual metaphors.
 - Well sign-posted content and links provide clarity for the user. Providing progressive disclosure for the user, giving them what they need, when they need it.
 - Informative headers and paragraphs providing informative prompts and explanations for elements.
@@ -566,9 +566,9 @@ The following section will be examining how the completed website has met the de
 *Navigation - Mobile*
 ![Navigation - Mobile](docs/screenshots/header_xs.png)
 
-The navigation bar is responsive to different screen size and present on all pages. It is made up of simple headers and is intuitive to all users.
+The navigation bar is responsive to different screen sizes and present on all pages. It is made up of simple headers and is intuitive to all users.
 
-The currently active page has it's header left in black and doesn't respond to being hovered over to disuade user interaction. Contrastingly, the inactive pages respond by changing background and text colour to encourage user interaction.
+The currently active page has its header left in black and doesn't respond to being hovered over to dissuade user interaction. Contrastingly, the inactive pages respond by changing background and text colour to encourage user interaction.
 
 The navigation bar is responsive to all device sizes. On mobile devices the menu is condensed into a drop-down menu, freeing up screen real estate and being represented by a recognisable "hamburger" menu. On smaller devices again the band's text logo disappears before overflowing off the side of the screen.
 
@@ -767,7 +767,7 @@ I fixed the above issues and ran the pages back through W3C's validation service
 
 ### CSS Validation
 
-I then carried out validation on the projects CSS file by running the page individually through "[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)".
+I then carried out validation on the project's CSS file by running the page individually through "[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)".
 
 <details><summary>CSS Pass</summary>
 <img src="docs/validation/val_css.png" alt="CSS Validation Pass"></details>
@@ -832,7 +832,7 @@ All of these were due to social media buttons in the footer.
 
 A quick fix for this would be to remove the custom styling for each button and use a default bootstrap dark theme.
 
-I've decided against this however, as in this instance each icon is using its correct brand colours. These brands are some of the most well-known and visited websites in the world and are recognisable instantly to many from their unique brand colours alone. In this case, I feel it's more beneficial for the user to have instant brand recognition and understanding of each icon over perfect contrast.
+I've decided against this, however, as in this instance each icon is using its correct brand colours. These brands are some of the most well-known and visited websites in the world and are recognisable instantly to many from their unique brand colours alone. In this case, I feel it's more beneficial for the user to have instant brand recognition and understanding of each icon over perfect contrast.
 
 ### Performance Testing
 
@@ -885,7 +885,7 @@ The website was tested and functioned as expected on the following devices:
 - Samsung Galaxy S20 & S21
 - Samsung Galaxy Tab S7
 - MacBook Air with M1 chip
-- Iphone 11
+- iPhone 11
 - Samsung Chrome Book
 
 The website has been tested on up-to-date versions of the following browsers:
@@ -902,105 +902,130 @@ The website has also been tested on monitors of 16:9, 16:10 and 21:9 resolutions
 
 [Back to top ↑](#the-oversights---band-website)
 
+---
 ## Bugs
+---
 
-Let's hope very few!
+**BUG #1**
 
-1. Using the condensed Padding CSS was not effecting the navbar at all.
+Using the "Padding" CSS function was not affecting the bootstrap navbar at all.
 
-        .navbar_links {
-            list-style: none;
-            padding: 15px, 0px, 0px, 15px;
-        }
+```
+.navbar_links {
+    list-style: none;
+    padding: 15px, 0px, 0px, 15px;
+    }
+```
 
-    The solution was to simply break it up into specific padding commands:
+The solution was to simply break it up into specific padding commands:
 
-        .navbar_links {
-            list-style: none;
-            padding-top: 5px;
-            padding-left: 15px;
-        }
-    ---
+```
+.navbar_links {
+    list-style: none;
+    padding-top: 5px;
+    padding-left: 15px;
+    }
+```
 
-2. Youtube & Bandcamp's Embeds were unresponsive Iframes by default and needed to be styled in order to adapt to the responsive layout of the website.
+**BUG #2**
 
-    This initial code specified a width and height for the video. 
+Youtube & Bandcamp's iframes were unresponsive by default. They require CSS styling to conform the iframe to the responsive layout of the website.
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DJQ0X-z65oQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+This initial code specified the width and height of the video's container. 
 
-    I'd believed that by setting the following, my issues would be solved and the design would become responsive.
+```
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DJQ0X-z65oQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```
+I believed that by setting the following, my issues would be resolved and the design would become responsive.
 
-            width="100%" height="auto"
+```
+width="100%" height="auto"
+```
+I was incorrect, however. The width now filled the container but the height of the video became squashed, cropping the top and bottom.
 
-    I was incorrect however and although the width now filled the container the videos height became a squashed strip that wouldn't change. The solution was to removed the width & height from the iframe and style it externally in the style.css sheet.
-    
-    I found guidance from this W3CSchools article. (https://www.w3schools.com/howto/howto_css_responsive_iframes.asp)
+The solution was to remove the width and height from the iframe and style it externally in the style.css sheet.
 
-    Which taught me that to maintain the 16:9 Aspect Ratio. I needed to set the container to relative and us either top or bottom padding to keep the iframe aligned with my responsive Bootstrap code. 
-    
-    The 56.25 came from using the needed 16:9 ratio (9/16=0.5625).
+I found guidance from this [W3CSchools article](https://www.w3schools.com/howto/howto_css_responsive_iframes.asp). Which taught me that to maintain the 16:9 Aspect Ratio. I was required to set the container to a relative position and use either top or bottom padding to keep the iframe aligned and responsive. 
 
-        .yt-container {
-            overflow: hidden;
-            padding-bottom: 56.25%;
-            position: relative;
-            height: 0;
-        }
+```    
+/*---The 56.25 came from using the needed 16:9 ratio (9/16=0.5625).*/
 
-        .yt-container iframe {
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-        }
+.yt-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    }
 
-    I was then able to adapt this code and alter it for use with the Bandcamp embed, allowing that to also become responsive.
-   
-    This time to achieve a 9:16 Aspect Ratio instead I used the default height & width values (350/621=1.7778) to determine that "177.78" would be the perfect size for padding.
-    
-    I adjusted this further to remove some unneccesary blank space from the widget.
-    ---
+.yt-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    }
+```
 
-3. Couldn't find a property to change the image sizes within Bootstraps card system. Led to uneven sizing across cards which looks untidy and distracting. Expected adding h-100 to the class would fix it  but this only made sure the cards themselves were the same size, not the space occupied by their contents.
-        ![Before_merch](docs/screenshots/merch_before.png)
+I was then able to adapt this code and alter it for use with the Bandcamp iframes, allowing that to conform to the responsive design.
+
+```   
+This time to achieve a 9:16 Aspect Ratio: 
+I used the default height & width values (350/621=1.7778) to determine that "177.78" would be the perfect padding size.
+I adjusted this further to remove some blank space from the iframe.
+```
+
+**BUG #3**
+
+I couldn't find a property to change the image sizes within Bootstrap's card system. This led to uneven sizing across cards, which looks untidy and visually distracting. 
+I Expected adding "h-100" to the class would fix the issue. But this only made sure the cards themselves were the same size, not the space occupied by their contents.
+![Before_merch](docs/bugs/merch_before.png)
         
-    Decided to simply resize the images to all have the same proportions within Photoshop and then replace the ones in use. A simple solution that achieved the results I wanted without any code changes.
-        ![After_merch](docs/screenshots/merch_after.png)
+I decided to simply resize the images themselves to all have the same proportions (height & width) within Photoshop. I then replaced the ones in use.
+This was a simple solution that achieved the results I wanted, without any major code changes.
+![After_merch](docs/bugs/merch_after.png)
 
----
+**BUG #4**
 
-4. one of my <-hr-> elements was larger than others. (CSS added specifically for the screenshots to make the problem more visible).
-The element was making use of bootstrap code in order to appear only on small devices.
+One of my "hr" elements was appearing wider than the others. The element was making use of bootstrap code to appear only on small-resolution devices.
+
+CSS has been added specifically for the screenshots to make the problem more visible.
+![bug_4](docs/bugs/bug_hr.png)
 
 
-    ![bug_4](docs/screenshots/bug_hr.png)
+The solution was to wrap the initial code within a "column" class to conform it to Bootstrap's styling:
 
+```    
+ <div class="col">
+    <hr class="d-none d-sm-block d-md-none">
+ </div>
+ ```
 
-SOLUTION: Wrap the initial code within a <-div class="col"-> in order to have it conform to Bootstraps styling.
+![bug_4_fix](docs/bugs/bug_hr_fix.png)
 
-    <div class="col">
-        <hr class="d-none d-sm-block d-md-none">
-    </div>
----
-   ![bug_4_fix](docs/screenshots/bug_hr_fix.png)
+**BUG #5**
 
----
+The brand text was forcing the "hamburger" menu onto the line below on smaller devices (< 450px). Utilising Bootcamp's grid system and breakpoints only seemed to remove my icon as well as the band logo text. This left the navigation bar with no branding and moved the "hamburger" menu to its default position of floating left, which I didn't want. 
 
-5. Brand text was forcing the hamburger menu navbar onto the line below on smaller devices (< 450px). Bootcamp solutions
-seemed to remove my icon as well leaving the bart with no branding and moving the burger menu to it's default position of floating to the left. I decided the simplist method would be to use a media query to hide just the brand text on smaller devices. Leaving the logo present in the nav bar - to maintain branding - while keeping the nav burger menu on the right hand side where users would expect it to be.
+![bug_5_fix](docs/bugs/brandtext_overflow.png)
 
-        /*--- Prevents the Brand text from pushing the navbar to the line below. Disappears before hand, leaving the logo visible*/
-        @media screen and (max-width: 450px) {
-            .navbar-brand{
-                width: 0;
-                font-size: 0;
-            }
-        }
+I decided the simple method would be to use a media query to hide just the brand text on smaller devices. Leaving the "wave logo" imager present in the nav bar - to maintain branding - and keeping the "hamburger" menu on the right-hand side where users would expect it to be.
+
+```
+/*--- Prevents the Brand text from pushing the navbar to the line below. Disappears beforehand, leaving the logo visible*/
+@media screen and (max-width: 450px) {
+    .navbar-brand{
+        width: 0;
+        font-size: 0;
+    }
+}
+```
 
 **Remaining Bugs**
 
-The webform submit button if spam clicked after disabling the CAPTCHA will send the same message multiple times. Gmail collapses these multiple messages into a single alert meaning it's not a big deal.
+The form "submit" button can be spam-clicked causing the same message to be sent multiple times. This was caused by disabling the CAPTCHA and re-enabling it would prevent the problem.
+However, Gmail collapses these multiple messages into a single alert meaning that if it were to occur, it wouldn't be an issue for the Band receiving the messages.
+
+Therefore the CAPTCHA has been left disabled for the time being to facilitate more beneficial user interaction.
 
 [Back to top ↑](#the-oversights---band-website)
 
@@ -1008,36 +1033,78 @@ The webform submit button if spam clicked after disabling the CAPTCHA will send 
 ## Credits 
 ---
 
-### Programmes Used
+### Languages Used
+
+- HTML 5
+- CSS 3
 
 ### Frameworks Used
 
+- [Bootstrap 5.2](https://getbootstrap.com/) - For their approchable, responsive grid system.
+- [Formsubmit](https://formsubmit.co/) - For their easy HTML-only approach to a functional contact form.
+
+### Validators Used
+
+- [W3C HTML Validator](https://validator.w3.org/) - Validation of HTML
+- [W3C JigSaw Validator](https://jigsaw.w3.org/css-validator/) - Validation of CSS
+- [Lighthouse & Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Performance testing
+- [Webaim](https://wave.webaim.org/) - Accessibility testing
+
 ### Technologies Used
+
 1. [CI TEMPLATE](https://github.com/Code-Institute-Org/gitpod-full-template) - This repository was initially created using Code Institute's provided template.
 
 2. [Gut42](https://gut42.com/the-oversights-hello-adventure) - For his stellar, commissioned design work on The Oversights album, logos and stickers. Used with permission throughout this website to establish a strong, branded theme.
 
 3. [Markdown Guide](https://www.markdownguide.org/cheat-sheet/) - For use of their "Markdown Cheat Sheet" for the instructional purpose of writing this README.md file.
 
-4. https://code-boxx.com/html-scroll-to-top-button/ - Back to top of page, simple code with no Javascript.
+4. [Code-Boxx](https://code-boxx.com/html-scroll-to-top-button/) - For providing a simple, Javascript-free method of making a "return to the top" button.
 
-5. https://usbrandcolors.com/youtube-colors/ - Giving me the correct logo hex colors to use on the background of buttons.
+5. [USBrandcolors](https://usbrandcolors.com/) - Giving me the correct brand hex colours - for Youtube, Spotify Bandcamp, etc. - to use for the background of the social media buttons.
 
-6. https://fontawesome.com/ - Icons
+6. [Font Awesome](https://fontawesome.com/) - For their free library of useful contextual icons. Helping to provide visual clarity to the "contact form" and decorative elements to the "music" page.
 
-7. https://compressjpeg.com/ - Compressing images to keep image size down.
+7. [Compressjpeg](https://compressjpeg.com/) - For allowing me to compress images and keep image file size down.
 
-8. https://png2jpg.com/ - png to jpg conversion
+8. [AnyWebp](https://anywebp.com/convert-to-webp.html) - For allowing me to convert images into a .webp format for use in picture elements, to improve the mobile functionality scores of the website.
 
-9. https://formsubmit.co/ - for functioning email form
+9. [Grammarly](https://app.grammarly.com/) - for spell-checking this README.
 
-10. https://www.youtube.com/watch?v=Yg6POD0M30w&ab_channel=ADesignerWhoCodes - for tutorials on functioning email forms.
+10. [Youtube - A Designer Who Codes](https://www.youtube.com/watch?v=Yg6POD0M30w&ab_channel=ADesignerWhoCodes) - For creating a helpful tutorial on making functioning HTML-only email forms.
+
+11. [Am I Responsive](https://ui.dev/amiresponsive) - For providing the mock-up image featured at the top of this document.
+
+12. [Google Fonts](https://fonts.google.com/) - For access to their wealth of commercially-available fonts.
+
+13. [Favicon.io](https://favicon.io/) - For converting our logo into a usable favicon
+
+14. [Balsamiq](https://balsamiq.com/) (create wireframes for the project)
+
+15. [GitHub](https://github.com/) - For serving as my IDE and allowing me to create and deploy my repository.
 
 [Back to top ↑](#the-oversights---band-website)
 
 ---
 ## Deployment
 ---
+
+The website was deployed on GitHub through the following steps:
+
+1. Login into GitHub and navigate to this repository - [CI_PP1_Ninja_Ramen](https://github.com/Hadokane/CI_PP1_Oversights)
+2. Head to the "Settings" tab on the navigation menu and select it.
+3. On the left sidebar select "Pages".
+4. Under "Build and deployment" you will see a heading names "Source". Click on the dropdown menu and select: "Branch: main" leaving the file as "/(root)"
+5. Click the save button.
+6. A URL will appear in your newly deployed repository.
+7.  GitHub will process your request and the bar's colour will change from blue to green on a page refresh, indicating that the page has been deployed.
+8. The website is now live and deployed at the following URL: https://hadokane.github.io/CI_PP1_Oversights/
+
+![CI_PP1_Ninja_Ramen](docs/screenshots/git_deploy.png)
+
+**Forking**
+1. Login into GitHub and navigate to this repository - [CI_PP1_Ninja_Ramen](https://github.com/Hadokane/CI_PP1_Oversights)
+2. Select the "Fork" tab on the navigation menu.
+3. Choose a destination to save your newly forked repository.
 
 [Back to top ↑](#the-oversights---band-website)
 
@@ -1046,11 +1113,11 @@ The webform submit button if spam clicked after disabling the CAPTCHA will send 
 ---
 
 With thanks to:
-- My fellow "Oversights" for trusting me with this task and providing helpful feedback throughout.
+- My fellow "Oversights" for trusting me with this task and providing helpful feedback.
 
-- My family and friends - for keeping me on task and providing a helpful eye or a pair of testing hands when needed.
+- My family and friends - for keeping me on task and providing a helpful eye and testing device when needed.
 
-- Code Institute & it's community at large, for providing me with the necessary skills, knowledge and guidance to pull this project off.
+- Code Institute & its community at large, for providing me with the necessary skills, knowledge and guidance to pull this project off.
 
 [Back to top ↑](#the-oversights---band-website)
 
