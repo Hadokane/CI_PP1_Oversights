@@ -62,7 +62,7 @@ It has been tested on a variety of devices and screen resolutions, from mobiles 
         - [Wireframes](#wireframes)
     - [Surface Plane](#surface-plane)
 2. [Features](#features)
-3. [Validation Tests](#validation_tests)
+3. [Validation Tests](#validation)
     - [HTML Validation](#html-validation)
     - [CSS Validation](#css-validation)
 4. [Testing](#testing)
@@ -420,6 +420,8 @@ Features include:
 
 <details><summary>Contact Wireframe</summary><img src="docs/wireframes/contact.png" alt="Contact Wireframe"></details>
 
+[Back to top ↑](#the-oversights---band-website)
+
 ---
 ## Surface Plane
 ---
@@ -541,6 +543,8 @@ Bootstrap Java dependencies are placed at the bottom of the body tags. CSS depen
 
 As webpages are loaded Top-Bottom in the HTML file, this should ensure that the page is loaded quickly and helps to ensure that the user doesn't see an unstyled page. 
 
+[Back to top ↑](#the-oversights---band-website)
+
 ---
 ## Features
 ---
@@ -550,12 +554,15 @@ The following section will be examining how the completed website has met the de
 **Navigation Bar**
 
 *Navigation - Monitor*
+
 ![Navigation - Monitor](docs/screenshots/header_bg.png)
 
 *Navigation - Tablet*
+
 ![Navigation - Tablet](docs/screenshots/header_sm.png)
 
 *Navigation - Mobile*
+
 ![Navigation - Mobile](docs/screenshots/header_xs.png)
 
 The navigation bar is responsive to different screen sizes and present on all pages. It is made up of simple headers and is intuitive to all users.
@@ -571,9 +578,11 @@ The social icons appear in the "hamburger" menu on mobile devices to be readily 
 **Footer**
 
 *Footer - Monitor*
+
 ![Footer- Monitor](docs/screenshots/footer_bg.png)
 
 *Footer - Tablet/Phone*
+
 ![Footer - Mobile](docs/screenshots/footer_sm.png)
 
 The footer is the only other element present on all pages. As such it is responsive. At larger sizes, it contains links to the band's social platforms and on the right contains a link to the developer's GitHub profile.
@@ -587,15 +596,19 @@ As mentioned, the social icons disappear at smaller sizes, moving to a higher va
 **Index Page**
 
 *Index - Monitor (two-column)*
+
 ![Index - Monitor](docs/screenshots/index_bg.png)
 
 *Footer - Phone (single-column)* 
+
 ![Index - Mobile](docs/screenshots/index_sm_iframes2.png)
 
 *Footer - Phone (single-column)*
+
 ![Index - Mobile2](docs/screenshots/index_sm_iframes.png)
 
 *Footer - Phone (single-column)*  **Hover Demonstration**
+
 ![Index - Mobile3](docs/screenshots/index_sm_hover.png)
 
 The "Index" serves as the home page. The section includes a two-column layout, that responsively collapses into a single column at smaller resolutions. 
@@ -611,12 +624,15 @@ The hover function is demonstrated here. Showing how the bold colours provide po
 **Music Page**
 
 *Music - Monitor (three-column)*
+
 ![Music - Monitor](docs/screenshots/music_bg.png)
 
 *Music - Phone (single-column)* 
+
 ![Music - Mobile](docs/screenshots/music_sm.png)
 
 *Music - Phone (single-column)* 
+
 ![Music - Mobile2](docs/screenshots/music_sm2.png)
 
 The "Music" page catalogues the band's releases and provides information to the user. It has a strong culturally appropriate style for the band with large imagery present representing their current release. It responsively collapses into a single-column layout for smaller devices, hiding the vertical separation bars.
@@ -631,18 +647,23 @@ Elements such as the iframes present on the first page are repeated here. As the
 **Shows Page**
 
 *Shows - Monitor (single-column)*
+
 ![Shows - Monitor](docs/screenshots/shows_bg.png)
 
 *Shows - Monitor (single-column)* **No Alerts**
+
 ![Shows - Monitor2](docs/screenshots/shows_bg_no_alerts.png)
 
 *Shows - Phone (single-column)* 
+
 ![Shows - Mobile](docs/screenshots/shows_sm.png)
 
 *Shows - Monitor (single-column)* **No Alerts**
+
 ![Shows - Mobile2](docs/screenshots/shows_sm_no_alerts.png)
 
 *Shows - Modal (full-screen)*
+
 ![Shows - Modal](docs/screenshots/shows_modal.png)
 
 "Shows" purpose is to catalogue the events the band plays and serve as a gallery.
@@ -656,9 +677,11 @@ Modals are wrapped inside of cards to provide a sleek, simple method of interact
 **Contact Page**
 
 *Contact - Monitor (single-column)* 
+
 ![Contact - Monitor](docs/screenshots/contact_bg.png)
 
 *Contact- Phone (single-column)* 
+
 ![Contact- Mobile](docs/screenshots/contact_sm.png)
 
 The "Contact" page provides a functional contact form for Event Managers to contact the band. Creating a more personal means of communication than going through a social channel like Facebook.
@@ -695,8 +718,10 @@ With the above assessment complete, I have confirmed that each predefined user s
 [Back to top ↑](#the-oversights---band-website)
 
 ---
-## Validation Tests
+## Validation
 ---
+
+Now that user stories have been met and the website has been made, I shall run it through several Validators to see if it meets best practices and runs efficiently.
 
 ### HTML Validation
 
