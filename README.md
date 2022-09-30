@@ -38,7 +38,7 @@ I am currently pursuing my **Diploma in Web App Development** from [Code Institu
 
 The academic aim of this project is to demonstrate my newly developed skills within the HTML & CSS languages, through the creation of a static, front-end website.
 
-I intend to display this throughout the project via my: coding, comments, commits and explanation provided by this README file.
+I intend to display this throughout the project via my: coding, comments, commits, and the explanation provided by this README file.
 
 As such, no other programming languages are directly used. 
 
@@ -82,7 +82,7 @@ I have decided to arrange my UX analysis by referencing Jesse James Garrett's ph
 
 Through this methodology, I will establish the goals of my project, in meeting the needs of both the user and site owner.
 
-I will maintain a clear, justified development path, and establish a defined priority of tasks and elements for integration. Ensuring the project avoids "feature creep," maintains its initial scope and meets the defined user needs.
+I will maintain a clear, justified development path, and establish a defined priority of tasks and elements for integration. Ensuring the project avoids "feature creep," maintains its initial scope, and meets the defined user needs.
 
 ---
 ### Strategy Plane
@@ -94,7 +94,7 @@ The aims of this project are: to design a webpage that meets the needs of an est
 
 **Band Goals:**
 
-The band were interviewed, and together we decided upon the following core goals:
+The band was interviewed, and together we decided upon the following core goals:
 
 - Promotion of their music and videos (content) is a priority.
 - Promotion of their merchandise.
@@ -191,7 +191,7 @@ With the user stories in mind, I decided it would be prudent to examine what exi
 This would be invaluable research as it would allow me to confirm:
 - What works visually? (Design, colours, typography, etc.)
 - What provided a good user experience? (Navigation methods, buttons, interactivity, etc.)
-- How did they meet relevant user needs? 
+- How did they meet relevant user needs? (Offered features.)
 - What had they done to set/achieve culturally appropriate content? (In this case, the culture of Rock Music as shown in imagery, design, layout etc.)
 
 I examined the following pages:
@@ -206,9 +206,7 @@ I examined the following pages:
 
 [Soundgarden](https://www.soundgardenworld.com/)
 
-Seeing their responsive designs between mobile and desktop along with their strong emphasis on a balance between branding and clarity.
-
-This has strengthened my faith in the above user stories and will help shape my thought process as I move through each design plane. 
+Seeing their responsive designs between mobile and desktop, along with their strong emphasis on a balance between branding and clarity has strengthened my faith in the above user stories, and will help shape my thought process as I move through each design plane. 
 
 [Back to top ↑](#the-oversights---band-website)
 
@@ -245,7 +243,7 @@ To further improve the user's experience we can:
 - Provide information on the "Music" page. 
     - Summarise the band's history.
     - Describe the releases.
-- A contact form will be provided for Event Managers to reach out to the band. Requires only essential information. 
+- A contact form will be provided for Event Managers to reach out to the band. Requiring only essential information. 
 
 **Features Required:**
 
@@ -256,10 +254,10 @@ The following are written in order of priority and will have dedicated sprints (
 - Responsive Navigation Bar
     - The highest priority. Featured on all pages.
     - To comply with best practices and a mobile-first approach to development, the navigation menu will display in full on medium or larger screens, and as a collapsed "hamburger menu" icon on smaller devices.
-    - The social media icons will only appear on the collapsed version of the menu to improve their visibility and the user's experience by removing the effort of having them scroll to the bottom of a longer (bootstrap columns filling more of a smaller screen) page to access them.
+    - The social media icons will only appear on the collapsed version of the menu to improve their visibility and the user's experience, by removing the effort of having them scroll to the bottom of a longer page to access them.
  - Responsive Footer
     - Featured on all pages. 
-    - Responsive nature is important for the user experience. Smaller screen sizes with move social media icons, therefore they are hidden at this size and moved to the nav bar, only being displayed here on larger screens.
+    - Responsive nature is important for the user experience. Smaller screen sizes will move social media icons, therefore they are hidden at this size and moved to the nav bar, only being displayed here on larger screens.
     - Include a button to take you back to the top of each page. Saves the user from having to scroll back up, thus improving their overall experience.
 - Index Page
     - The home page. The main hub of the website. The place the user will begin their journey.
@@ -271,7 +269,7 @@ The following are written in order of priority and will have dedicated sprints (
     - Gallery section to document past shows.
     - Show a featured image for each. Clicking the image will open a fullscreen gallery. This way the design remains clutter-free and the user can see at a glance, what they're looking for.
 - Music Page
-    - Article-style layout. Image left-aligned in an aside. Information is present on the right. Give an easy-to-read, minimalistic appearance.
+    - Article-style layout. Main image left-aligned in an aside. Information is present on the right. Give an easy-to-read, minimalistic appearance.
 - Contact Form
     - For Event Managers specifically. The least priority as they can - and most likely will - get in touch with the band via social platforms like Facebook and likely make up the smallest pool of users.
     - Use required tags to ensure messages are sent with all relevant information.
@@ -286,11 +284,11 @@ The following are written in order of priority and will have dedicated sprints (
 These ideas have been postponed for future updates and refinement.
 
 - Shows Page
-    - A list of upcoming shows is added at the top. Currently, the band are recording music and has nothing upcoming. As such this section won't be included in this initial sprint. An alert can be included to redirect attention toward their Facebook page. Shows can be announced on short notice, so the viewers benefit more from finding this information on an external social platform.
-    - Add [Pagination](https://getbootstrap.com/docs/5.2/components/pagination/) to the Gallery section as more gigs are played.
+    - A list of upcoming shows is added at the top. Currently, the band are recording music and have no upcoming events. As such this section won't be included in this initial sprint. An alert can be included to redirect attention towards their Facebook page. Shows can be announced on short notice, so the viewers benefit more from finding this information on an external social platform.
+    - Add [Pagination](https://getbootstrap.com/docs/5.2/components/pagination/) to the Gallery section as more gigs are played to stop the page growing to long.
 - Music Page
-    - As the band are working on releasing their follow-up EP, a new section can be added to the music page for users to select an EP before then taking them to the current article-styled page, specific to that user's selection.
-    - The hierarchy of importance would be adhered to here. Albums would follow a categorical release pattern, with newer releases first. 
+    - As the band are working on releasing their follow-up EP, a new section can be added to the music page for users to select which EP they want information on, before then taking them to the selected article-style page.
+    - The hierarchy of importance would be adhered to here. Albums would follow a categorical release pattern, with newer releases shown first. 
 
 [Back to top ↑](#the-oversights---band-website)
 
@@ -311,14 +309,14 @@ Lower priority information is then divided by relevance into unique pages. These
 
 The integration of iframes will:
 - Expose the user to the band's social media channels. 
-- Encourage user interaction with them.
+- Encourage user interaction with these channels.
 - Convert the user into a follower/subscriber of the platform.
 
 The presence of icons throughout the website serves many purposes:
-- Social media icons are highly recognisable. Used throughout the internet they are expected by the user, who immediately knows that interaction will redirect them - via a new browser tab - to the user-expected platform.
-- An icon at the bottom of each screen serves as a link back to the top. This is especially important for users on mobile devices who will be scrolling a large single-column layout. The user's experience is thus drastically improved as we save them from the "finger fatigue" of having to scroll back to the top of each section to revisit an element.
+- Social media icons are highly recognisable. Used throughout the internet they are expected by the user, who immediately knows that interaction will redirect them - via a new browser tab - to the expected platform.
+- An icon at the bottom of each screen serves as a link back to the top. This is especially important for users on mobile devices who will be scrolling a large single-column layout. The user's experience is thus drastically improved as we save them from the "finger-fatigue" of having to scroll back to the top of each section to revisit an element.
 
-Individual pages will serve their functions but adhere to specific features:
+Individual pages will serve their functions and ahere to specific features:
 - The expected information will be present on each page
     - E.g. - "Shows" contains the galleries of past shows.
 - The page's structure will appear relatively linear and be simple for the user to navigate. 
@@ -344,7 +342,7 @@ Overall this website will:
 - Provide purposeful paragraphs and headings.
 - Provide feedback to the user on interaction through the use of the "hover" class.
 - Offer "content hinting" - mainly on the index page - to encourage users to scroll downwards and interact with more content.
-- Reward the user with the "UP" icon once reaching the bottom of each page, saving the hassle of scrolling back up, while removing the need for a fixed navigation bar that takes up screen real estate. 
+- Reward the user with the "UP" icon once reaching the bottom of each page, saving the hassle of scrolling back to the top, while removing the need for a fixed navigation bar that takes up screen real estate. 
 
 [Back to top ↑](#the-oversights---band-website)
 
@@ -458,7 +456,7 @@ This is to encourage the user to follow the band on these platforms. Further pro
 
 Visual separation is achieved between sections of the website through the use of <"HR"> tags to create dividing lines. This simple visual, intuitively tells the user when one section ends and another begins.
 
-Drop shadows were added to the navigation bar and footer to provide a sleek sense of elegance and professionalism to the website. This furthers the visual separation between sections with added an added sense of depth and visual clarity.
+Drop shadows were added to the navigation bar and footer to provide a sleek sense of elegance and professionalism to the website. This furthers the visual separation between sections with an added sense of depth and visual clarity.
 
 This approach is taken one step further on the Music page with Vertical line elements being created in CSS to provide visual column separation.
 
@@ -466,9 +464,9 @@ This approach is taken one step further on the Music page with Vertical line ele
 
 A modern, minimalistic design was selected for the website. Utilising black, white and grey for all background colours.
 
-Black and White are timeless choices. They will never be out-of-style and provide ideal contrast between elements, avoiding contrast issues, and reducing overwhelming clutter and visual noise.
+Black and White are timeless choices. They will never be out-of-style and provide optimal contrast between elements, avoiding contrast issues, and reducing overwhelming clutter and visual noise.
 
-Grey is utilised for the navigation menu and footer to help them stand out from other sections.
+Grey (transparent black) is utilised for the navigation menu and footer to help them stand out further from other sections.
 
 ![Colour Pallet](docs/screenshots/colour_choices.png)
 
@@ -504,9 +502,9 @@ Additionally, they add to the culturally appropriate image of a rock band. Servi
 
 **Font / Typography**
 
-The colour "Antique White" was utilised in paragraph text throughout the website, to provide visual distinction between this off-white coloured font and the white background of the website sections.
+The colour "Antique White" was utilised in paragraph text throughout the website, to provide visual distinction between itself and the white background of the website sections.
 
-It is used in conjunction with a black background square to match the style of hovered links, blend seamlessly with the border styling present on cards and contribute to the website's overall style.
+It is used in conjunction with a black background square to match the style of hovered links, blend seamlessly with the border styling present on cards and contribute to the website's overall thematic style.
 
 The band themselves used different fonts than those present on the website in their initial logo. They however do not own the licensing for these fonts to be used online.
 
@@ -567,11 +565,11 @@ The following section will be examining how the completed website has met the de
 
 The navigation bar is responsive to different screen sizes and present on all pages. It is made up of simple headers and is intuitive to all users.
 
-The currently active page has its header left in black and doesn't respond to being hovered over to dissuade user interaction. Contrastingly, the inactive pages respond by changing background and text colour to encourage user interaction.
+The currently active page has its header left in black and doesn't respond to being hovered over, in order to dissuade user interaction. Contrastingly, the inactive pages respond by changing background and text colour to encourage user interaction.
 
-The navigation bar is responsive to all device sizes. On mobile devices the menu is condensed into a drop-down menu, freeing up screen real estate and being represented by a recognisable "hamburger" menu. On smaller devices again the band's text logo disappears before overflowing off the side of the screen.
+The navigation bar is responsive to all device sizes. On mobile devices the menu is condensed into a drop-down menu, freeing up screen real estate and being represented by a recognisable "hamburger" menu icon. On smaller devices again the band's text logo disappears before it has the chance to "overflow" off the side of the screen.
 
-The social icons appear in the "hamburger" menu on mobile devices to be readily available for user interaction.
+The social icons appear in the "hamburger" menu on mobile devices to be readily available, and more convenient for user interaction.
 
     User Stories met: 5, 6, 14, 17.
 
@@ -585,11 +583,11 @@ The social icons appear in the "hamburger" menu on mobile devices to be readily 
 
 ![Footer - Mobile](docs/screenshots/footer_sm.png)
 
-The footer is the only other element present on all pages. As such it is responsive. At larger sizes, it contains links to the band's social platforms and on the right contains a link to the developer's GitHub profile.
+The footer is the only other element present on all pages. As such it is responsive. At larger sizes, it contains links to the band's social platforms, and contains a link to the developer's GitHub profile.
 
-The social media icons displayed are all well known and use the official branded colours as their button background, ensuring the user has access to each platform and is visually drawn to the links. Each button opens the corresponding page in a new browser tab, keeping the user's session on the band's website undisturbed.
+The social media icons displayed are all well known and use the official branded colours as their backgrounds. This ensures the user has access to each platform and is visually drawn to the links. Each button opens the corresponding page in a new browser tab, keeping the user's session on the band's website undisturbed.
 
-As mentioned, the social icons disappear at smaller sizes, moving to a higher vantage point for the user. The GitHub logo doesn't show on phones as I felt those interested in the development process would likely have viewed it on a larger resolution screen such as a desktop. The promotion of my developer website is in no way a priority.
+As mentioned, the social icons disappear at smaller sizes, moving to a higher vantage point for the user in the nav bar. The GitHub logo doesn't show on phones as I felt those interested in the development process would likely have viewed it on a larger resolution screen such as a desktop. The promotion of my developer github is in no way a priority.
 
     User Stories met: 1, 2, 6, 17.
 
@@ -615,7 +613,7 @@ The "Index" serves as the home page. The section includes a two-column layout, t
 
 It provides the user with immediate access to the latest music release and videos via iframes. These have been styled in CSS to make them responsive to the screen size and their containers. Each element is adorned with a provocative message, engaging the user and asking them to interact with the element. These elements also serve as a direct gateway into the band's social platforms.
 
-Below this section is the merchandise tab. The minimalistic layout of the page accentuates the vibrant background colour of these images, drawing the eyes of users, and encouraging clicks. Shopping cart icons are present to show users where to click and provide further visual context.
+Below this section is the merchandise tab. The minimalistic layout of the page accentuates the vibrant background colour of these images, drawing the attention of users, and encouraging clicks. Shopping cart icons are present to show users where to click and provide additional visual context.
 
 The hover function is demonstrated here. Showing how the bold colours provide positive feedback to the user upon interaction.
 
@@ -637,8 +635,7 @@ The hover function is demonstrated here. Showing how the bold colours provide po
 
 The "Music" page catalogues the band's releases and provides information to the user. It has a strong culturally appropriate style for the band with large imagery present representing their current release. It responsively collapses into a single-column layout for smaller devices, hiding the vertical separation bars.
 
-Vertical separation is present across this three-column layout
-giving it a recognisable article/newspaper layout that a user would be comfortable seeing.
+Vertical separation is present across this three-column layout giving it a recognisable article/newspaper layout that a user would be comfortable seeing.
 
 Elements such as the iframes present on the first page are repeated here. As the band release more music, the home page will begin to cycle through and replace content to keep the most recent music and videos at the forefront. These pages will remain unaltered, however, serving as a time capsule for each release.
 
@@ -668,9 +665,9 @@ Elements such as the iframes present on the first page are repeated here. As the
 
 "Shows" purpose is to catalogue the events the band plays and serve as a gallery.
 
-It features two Alert messages to improve the page's clarity to the user. These can be hidden by pressing the "X" button on the right-hand side to collapse the page into a more visually pleasing view that makes use of content hinting, exposing the tops of the gallery cards.
+It features two Alert messages to improve the page's clarity to the user. These can be hidden by pressing the "X" button on the right-hand side to collapse the page into a more visually pleasing view that makes use of content hinting, exposing the top of the gallery cards.
 
-Modals are wrapped inside of cards to provide a sleek, simple method of interactivity for the user. The cards keep the page clutter-free and allow strong, cropped hero images to draw the attention of the user, they want to click and see the full image. The full-screen modal then opens up, keeping the user on the current page (and being closable via an "X" button) allowing them to scroll through a varied-size image gallery at adaptive resolutions.
+Modals are wrapped inside of cards to provide a sleek, simple method of interactivity for the user. The cards keep the page clutter-free and allow strong, cropped hero images to draw the attention of the user. They want to click and see the full-size imagery. The full-screen modal then opens, keeping the user on the current page - and being closable via an "X" button - allowing them to scroll through a varied-size image gallery at adaptive resolutions.
 
     User Stories met: 3, 4, 10, 12, 18.
 
@@ -700,9 +697,11 @@ Once the form is submitted the user will be taken to the "Thanks" page.
 **Thanks Page**
 
 *Thanks - Monitor (single-column)* 
+
 ![Thanks - Monitor](docs/screenshots/thanks_bg.png)
 
 *Thanks - Phone (single-column)* 
+
 ![Thanks - Mobile](docs/screenshots/thanks_sm.png)
 
 The thanks page is kept simple. Its sole purpose is to provide a positive user experience by giving them immediate feedback that their form has been sent to the band.
@@ -752,9 +751,9 @@ I carried out validation for this project by running each page individually thro
 The errors found can be summarised as follows:
 - There was an issue with a missing closing tag in the footer, affecting all pages.
 - The body tag had been duplicated on a few of the pages.
-- The Bandcamp, Spotify and Youtube iframes all made use of inline styling that W3C deemed a failure.
+- The Bandcamp, Spotify and Youtube iframes all made use of inline styling that W3C deemed an issue.
 - Some images were missing "alt" tags.
-- There was a naming convention error with the sticker images, where I'd forgotten to remove a space from the file names.
+- There was a naming convention error with the sticker images, where I had forgotten to remove a space from the file names.
 
 
 **Validation Passes**
@@ -811,8 +810,8 @@ Issues Found:
     - Will address this by introducing a correct heading hierarchy across my website.
 - "Home" tab is marked redundant as the website's logo has the same function.
     - The "Home" tab is clear for the user to use and the added functionality being present on the logo provides a larger surface area for users to interact with. 
-    - The logo also takes over the function of the home button on smaller screen sizes without the user having to access the "hamburger" menu. Setting it to only function at this size would confuse users and dampen their experience.
-    - As such I will keep both to ensure a convenient user experience.
+    - The logo also duplicates the function of the home button on smaller screen sizes without the user having to access the "hamburger" menu. Setting it to only function at this size would confuse users and dampen their experience.
+    - As such I will keep both to ensure a convenient and consistent user experience.
 - Alerts about Youtube videos, mentioning it's wise to ensure videos have synchronised captioning available.
     - Youtube does provide captioning for these videos. I can manually add to this if deemed necessary in a future update.
 - Mentions how the merchandise tab features a redundant link. Same link for "Hello Adventure: Digital Download" & "Hello Adventure: Physical Edition"
@@ -850,6 +849,8 @@ All of these were due to social media buttons in the footer.
 A quick fix for this would be to remove the custom styling for each button and use a default bootstrap dark theme.
 
 I've decided against this, however, as in this instance each icon is using its correct brand colours. These brands are some of the most well-known and visited websites in the world and are recognisable instantly to many from their unique brand colours alone. In this case, I feel it's more beneficial for the user to have instant brand recognition and understanding of each icon over perfect contrast.
+
+Additionally I realise that if these elements were images and not icons wrapped in buttons, they wouldn't be flagged as contrast issues. With this in mind, there is no issue with the icons being presented in this manner.
 
 ### Performance Testing
 
@@ -907,13 +908,13 @@ The website was tested and functioned as expected on the following devices:
 
 The website has been tested on up-to-date versions of the following browsers:
 
-Microsoft Edge
-Google Chrome
-Chrome for android
-Mozilla Firefox
-Opera
-Safari
-Internet Explorer
+- Microsoft Edge
+- Google Chrome
+- Chrome for android
+- Mozilla Firefox
+- Opera
+- Safari
+- Internet Explorer
 
 The website has also been tested on monitors of 16:9, 16:10 and 21:9 resolutions.
 
@@ -953,11 +954,13 @@ This initial code specified the width and height of the video's container.
 ```
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DJQ0X-z65oQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
+
 I believed that by setting the following, my issues would be resolved and the design would become responsive.
 
 ```
 width="100%" height="auto"
 ```
+
 I was incorrect, however. The width now filled the container but the height of the video became squashed, cropping the top and bottom.
 
 The solution was to remove the width and height from the iframe and style it externally in the style.css sheet.
@@ -983,7 +986,7 @@ I found guidance from this [W3CSchools article](https://www.w3schools.com/howto/
     }
 ```
 
-I was then able to adapt this code and alter it for use with the Bandcamp iframes, allowing that to conform to the responsive design.
+I was then able to adapt this code and alter it for use with Bandcamp's iframe, allowing that to conform to the responsive design.
 
 ```   
 This time to achieve a 9:16 Aspect Ratio: 
@@ -993,8 +996,8 @@ I adjusted this further to remove some blank space from the iframe.
 
 **BUG #3**
 
-I couldn't find a property to change the image sizes within Bootstrap's card system. This led to uneven sizing across cards, which looks untidy and visually distracting. 
-I Expected adding "h-100" to the class would fix the issue. But this only made sure the cards themselves were the same size, not the space occupied by their contents.
+Using Bootstrap's card system led to uneven sizing of images within each card. This looked untidy and visually distracting. 
+I Expected adding "h-100" to the class would fix the issue. Unfortunately this only made the cards themselves the same size, not the space occupied by their contents.
 ![Before_merch](docs/bugs/merch_before.png)
         
 I decided to simply resize the images themselves to all have the same proportions (height & width) within Photoshop. I then replaced the ones in use.
@@ -1021,11 +1024,11 @@ The solution was to wrap the initial code within a "column" class to conform it 
 
 **BUG #5**
 
-The brand text was forcing the "hamburger" menu onto the line below on smaller devices (< 450px). Utilising Bootcamp's grid system and breakpoints only seemed to remove my icon as well as the band logo text. This left the navigation bar with no branding and moved the "hamburger" menu to its default position of floating left, which I didn't want. 
+The brand text was forcing the "hamburger" menu onto the line below on smaller devices (< 450px). Utilising Bootcamp's grid system and breakpoints seemed to remove both the icon and band logo text. This left the navigation bar with no branding and moved the "hamburger" menu to its default position of floating left, which I didn't want. 
 
 ![bug_5_fix](docs/bugs/brandtext_overflow.png)
 
-I decided the simple method would be to use a media query to hide just the brand text on smaller devices. Leaving the "wave logo" imager present in the nav bar - to maintain branding - and keeping the "hamburger" menu on the right-hand side where users would expect it to be.
+I decided the simplest method would be to use a media query to hide the brand text on smaller devices. Leaving the "wave logo" image present in the nav bar - in order  to maintain branding - keeping the "hamburger" menu on the right-hand side where users would expect it to be.
 
 ```
 /*--- Prevents the Brand text from pushing the navbar to the line below. Disappears beforehand, leaving the logo visible*/
@@ -1039,10 +1042,11 @@ I decided the simple method would be to use a media query to hide just the brand
 
 **Remaining Bugs**
 
-The form "submit" button can be spam-clicked causing the same message to be sent multiple times. This was caused by disabling the CAPTCHA and re-enabling it would prevent the problem.
-However, Gmail collapses these multiple messages into a single alert meaning that if it were to occur, it wouldn't be an issue for the Band receiving the messages.
+The form "submit" button can be "spam-clicked" causing the same message to be sent multiple times. This was caused by disabling the CAPTCHA. 
 
-Therefore the CAPTCHA has been left disabled for the time being to facilitate more beneficial user interaction.
+Re-enabling it would prevent the problem. However, Gmail collapses these multiple messages into a single alert meaning that if it were to occur, it wouldn't be an issue for the Band when receiving the messages.
+
+Therefore the CAPTCHA has been left disabled, for the time being, to facilitate more beneficial user interaction.
 
 [Back to top ↑](#the-oversights---band-website)
 
@@ -1052,19 +1056,19 @@ Therefore the CAPTCHA has been left disabled for the time being to facilitate mo
 
 The website was deployed on GitHub through the following steps:
 
-1. Login into GitHub and navigate to this repository - [CI_PP1_Ninja_Ramen](https://github.com/Hadokane/CI_PP1_Oversights)
+1. Login into GitHub and navigate to this repository - [CI_PP1_Oversights](https://github.com/Hadokane/CI_PP1_Oversights)
 2. Head to the "Settings" tab on the navigation menu and select it.
 3. On the left sidebar select "Pages".
 4. Under "Build and deployment" you will see a heading names "Source". Click on the dropdown menu and select: "Branch: main" leaving the file as "/(root)"
 5. Click the save button.
 6. A URL will appear in your newly deployed repository.
-7.  GitHub will process your request and the bar's colour will change from blue to green on a page refresh, indicating that the page has been deployed.
+7. GitHub will process your request and the bar's colour will change from blue to green on a page refresh, indicating that the page has been deployed.
 8. The website is now live and deployed at the following URL: https://hadokane.github.io/CI_PP1_Oversights/
 
-![CI_PP1_Ninja_Ramen](docs/screenshots/git_deploy.png)
+![CI_PP1_Oversights](docs/screenshots/git_deploy.png)
 
 **Forking**
-1. Login into GitHub and navigate to this repository - [CI_PP1_Ninja_Ramen](https://github.com/Hadokane/CI_PP1_Oversights)
+1. Login into GitHub and navigate to this repository - [CI_PP1_Oversights](https://github.com/Hadokane/CI_PP1_Oversights)
 2. Select the "Fork" tab on the navigation menu.
 3. Choose a destination to save your newly forked repository.
 
@@ -1122,6 +1126,8 @@ The website was deployed on GitHub through the following steps:
 14. [Balsamiq](https://balsamiq.com/) (create wireframes for the project)
 
 15. [GitHub](https://github.com/) - For serving as my IDE and allowing me to create and deploy my repository.
+
+16. [W3CSchools article](https://www.w3schools.com/howto/howto_css_responsive_iframes.asp) - For guidance on resizing Iframes.
 
 [Back to top ↑](#the-oversights---band-website)
 
